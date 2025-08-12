@@ -1,0 +1,290 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|c:\\users\\burgija\\desktop\\cloud\\moviediscussionservice\\moviediscussionservice_webrole\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\views\\app\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\views\\app\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_data\\repositories\\userdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\repositories\\userdatarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\scripts\\jquery-3.7.0.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\scripts\\jquery-3.7.0.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_webrole\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_data\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService\\ServiceConfiguration.Local.cscfg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|solutionrelative:MovieDiscussionService\\ServiceConfiguration.Local.cscfg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService\\ServiceConfiguration.Cloud.cscfg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|solutionrelative:MovieDiscussionService\\ServiceConfiguration.Cloud.cscfg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\moviediscussionservice_data\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj||{C1C21263-6FDE-4EC2-9D4C-2B238680F849}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj||{C1C21263-6FDE-4EC2-9D4C-2B238680F849}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppController.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AppController.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Controllers\\AppController.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AppController.cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Controllers\\AppController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAewBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T10:28:21.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\App\\Home.cshtml",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Views\\App\\Home.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\App\\Home.cshtml",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Views\\App\\Home.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T10:16:46.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T19:01:52.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T18:20:41.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-23T17:14:59.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T17:08:23.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Global.asax.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Global.asax.cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Global.asax.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAewCAAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T17:06:01.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController .cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:29:33.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "jquery-3.7.0.js",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Scripts\\jquery-3.7.0.js",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Scripts\\jquery-3.7.0.js",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Scripts\\jquery-3.7.0.js",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Scripts\\jquery-3.7.0.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-23T14:29:24.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WebRole.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\WebRole.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\WebRole.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_WebRole\\WebRole.cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\WebRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T17:29:17.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceConfiguration.Local.cscfg",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService\\ServiceConfiguration.Local.cscfg",
+              "RelativeDocumentMoniker": "MovieDiscussionService\\ServiceConfiguration.Local.cscfg",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService\\ServiceConfiguration.Local.cscfg",
+              "RelativeToolTip": "MovieDiscussionService\\ServiceConfiguration.Local.cscfg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-22T17:16:57.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServiceConfiguration.Cloud.cscfg",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService\\ServiceConfiguration.Cloud.cscfg",
+              "RelativeDocumentMoniker": "MovieDiscussionService\\ServiceConfiguration.Cloud.cscfg",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService\\ServiceConfiguration.Cloud.cscfg",
+              "RelativeToolTip": "MovieDiscussionService\\ServiceConfiguration.Cloud.cscfg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-22T17:16:52.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_Data\\packages.config",
+              "RelativeDocumentMoniker": "MovieDiscussionService_Data\\packages.config",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_Data\\packages.config",
+              "RelativeToolTip": "MovieDiscussionService_Data\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-22T17:16:41.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_Data\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_Data\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "MovieDiscussionService_Data\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T17:16:37.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MovieDiscussionService_WebRole [Role]",
+              "DocumentMoniker": "WindowsAzure: MovieDiscussionService.MovieDiscussionService_WebRole",
+              "ToolTip": "WindowsAzure: MovieDiscussionService.MovieDiscussionService_WebRole [Role]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-22T16:57:13.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserDataRepository.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_Data\\Repositories\\UserDataRepository.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Repositories\\UserDataRepository.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_Data\\Repositories\\UserDataRepository.cs",
+              "RelativeToolTip": "MovieDiscussionService_Data\\Repositories\\UserDataRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T16:53:09.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\CLOUD\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\User.cs",
+              "RelativeToolTip": "MovieDiscussionService_Data\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T16:09:14.507Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

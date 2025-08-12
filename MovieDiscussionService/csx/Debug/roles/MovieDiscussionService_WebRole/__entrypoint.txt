@@ -1,0 +1,1 @@
+bin\MovieDiscussionService_WebRole.dll
