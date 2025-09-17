@@ -6,4 +6,20 @@
       <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
     </ConfigurationSettings>
   </Role>
+  <Role name="NotificationService">
+    <Instances count="3" />
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="WorkerRoleService">
+    <Instances count="1" />
+    <ConfigurationSettings />
+  </Role>
+  <Role name="HealthMonitoringService">
+    <Instances count="1" />
+	  <ConfigurationSettings>
+		  <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+	  </ConfigurationSettings>
+  </Role>
 </ServiceConfiguration>

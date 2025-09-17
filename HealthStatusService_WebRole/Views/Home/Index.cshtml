@@ -1,0 +1,19 @@
+﻿@model IQueryable<MovieDiscussionService_Contracts.Contracts.HealthCheckRecord>
+
+<h2>Health Status (placeholder)</h2>
+
+<table>
+    <tr>
+        <th>Timestamp</th>
+        <th>Service</th>
+        <th>Status</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Timestamp</td>
+            <td>@item.ServiceName</td>
+            <td>@item.Status</td>
+        </tr>
+    }
+</table>

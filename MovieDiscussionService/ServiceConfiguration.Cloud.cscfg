@@ -6,10 +6,41 @@
       <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
     </ConfigurationSettings>
   </Role>
+  <Role name="NotificationService">
+    <Instances count="3" />
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="WorkerRoleService">
+    <Instances count="1" />
+    <ConfigurationSettings />
+  </Role>
+  <Role name="HealthMonitoringService">
+    <Instances count="1" />
+	  <ConfigurationSettings>
+		  <Setting name="DataConnectionString" value="UseDevelopmentStorage=true" />
+	  </ConfigurationSettings>
+  </Role>
   <NetworkConfiguration>
     <VirtualNetworkSite name="moviediscussionserviceVNet" />
     <AddressAssignments>
       <InstanceAddress roleName="MovieDiscussionService_WebRole">
+        <Subnets>
+          <Subnet name="WebTier" />
+        </Subnets>
+      </InstanceAddress>
+      <InstanceAddress roleName="NotificationService">
+        <Subnets>
+          <Subnet name="WebTier" />
+        </Subnets>
+      </InstanceAddress>
+      <InstanceAddress roleName="WorkerRoleService">
+        <Subnets>
+          <Subnet name="WebTier" />
+        </Subnets>
+      </InstanceAddress>
+      <InstanceAddress roleName="HealthMonitoringService">
         <Subnets>
           <Subnet name="WebTier" />
         </Subnets>

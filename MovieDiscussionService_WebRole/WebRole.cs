@@ -16,5 +16,6 @@ namespace MovieDiscussionService_WebRole
 
             return base.OnStart();
         }
+
     }
 }

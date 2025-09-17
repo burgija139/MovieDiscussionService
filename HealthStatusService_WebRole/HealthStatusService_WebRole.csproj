@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HealthMonitoringService\HealthMonitoringService.csproj" />
+    <ProjectReference Include="..\MovieDiscussionService_Contracts\MovieDiscussionService_Contracts.csproj" />
+    <ProjectReference Include="..\MovieDiscussionService_Data\MovieDiscussionService_Data.csproj" />
+  </ItemGroup>
+
+</Project>
