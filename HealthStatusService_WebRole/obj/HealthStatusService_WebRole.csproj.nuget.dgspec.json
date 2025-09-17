@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj": {}
+  },
+  "projects": {
+    "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj",
+        "projectName": "HealthMonitoringService",
+        "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj": {
+                "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+        "projectName": "HealthStatusService_WebRole",
+        "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+        "packagesPath": "C:\\Users\\marko\\.nuget\\packages\\",
+        "outputPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj": {
+                "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj"
+              },
+              "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj": {
+                "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj"
+              },
+              "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj": {
+                "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj",
+        "projectName": "MovieDiscussionService_Contracts",
+        "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj",
+        "projectName": "MovieDiscussionService_Data",
+        "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

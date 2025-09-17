@@ -39,6 +39,14 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HealthMonitoringService\HealthMonitoringService.csproj">
+      <Name>HealthMonitoringService</Name>
+      <Project>{527d0f75-f2dc-4bf1-9e44-b299ec3d3750}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>HealthMonitoringService</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
     <ProjectReference Include="..\MovieDiscussionService_WebRole\MovieDiscussionService_WebRole.csproj">
       <Name>MovieDiscussionService_WebRole</Name>
       <Project>{dac1db2c-aba9-4db6-b850-67371a1ba6be}</Project>
@@ -47,12 +55,34 @@
       <RoleName>MovieDiscussionService_WebRole</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
+    <ProjectReference Include="..\NotificationService\NotificationService.csproj">
+      <Name>NotificationService</Name>
+      <Project>{bf797b93-34bc-41bd-b7f9-cd776cf90a99}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>NotificationService</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkerRoleService\WorkerRoleService.csproj">
+      <Name>WorkerRoleService</Name>
+      <Project>{5ad50c13-8666-4ad1-8499-4fa8b2f187be}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>WorkerRoleService</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="HealthMonitoringServiceContent\" />
     <Folder Include="MovieDiscussionService_WebRoleContent\" />
+    <Folder Include="NotificationServiceContent\" />
+    <Folder Include="WorkerRoleServiceContent\" />
   </ItemGroup>
   <ItemGroup>
+    <DiagnosticsConfiguration Include="HealthMonitoringServiceContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="MovieDiscussionService_WebRoleContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="NotificationServiceContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="WorkerRoleServiceContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

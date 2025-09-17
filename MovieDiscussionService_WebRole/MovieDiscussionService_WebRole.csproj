@@ -59,7 +59,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\WindowsAzure.Storage.9.3.2\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+      <HintPath>..\packages\WindowsAzure.Storage.9.3.3\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -236,6 +236,10 @@
     <Content Include="Scripts\jquery-3.7.0.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MovieDiscussionService_Contracts\MovieDiscussionService_Contracts.csproj">
+      <Project>{3a8d4c0f-d9f5-4d74-993a-061e8f531915}</Project>
+      <Name>MovieDiscussionService_Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MovieDiscussionService_Data\MovieDiscussionService_Data.csproj">
       <Project>{1b9eb085-6b5c-4137-86a1-79ed10e8edae}</Project>
       <Name>MovieDiscussionService_Data</Name>
