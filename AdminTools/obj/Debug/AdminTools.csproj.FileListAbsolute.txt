@@ -7,9 +7,11 @@ E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Microsoft
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\MovieDiscussionService_Data.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Newtonsoft.Json.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Buffers.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.ClientModel.dll
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Configuration.ConfigurationManager.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Memory.Data.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Memory.dll
@@ -19,6 +21,8 @@ E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Te
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Text.Json.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Threading.Tasks.Extensions.dll
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.ValueTuple.dll
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\MovieDiscussionService_Data.pdb
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\MovieDiscussionService_Data.dll.config
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
@@ -29,6 +33,7 @@ E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Microsoft
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\Newtonsoft.Json.xml
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Buffers.xml
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.ClientModel.xml
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Configuration.ConfigurationManager.xml
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Memory.xml
 E:\Fakultet\Cloud\Projekat\MovieDiscussionService\AdminTools\bin\Debug\System.Memory.Data.xml

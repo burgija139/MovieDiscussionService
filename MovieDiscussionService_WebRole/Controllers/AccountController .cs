@@ -52,6 +52,13 @@ namespace MovieDiscussionService.Controllers
 
 			// Čuvamo samo RowKey u Session
 			Session["UserEmail"] = user.RowKey;
+
+			// Provera da li je admin
+			if (user.IsAdmin)
+			{
+				return Redirect("https://localhost:7254/");
+			}
+
 			return RedirectToAction("Index", "App");
 		}
 

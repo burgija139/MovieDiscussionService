@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\health\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\health\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\health\\_healthstatuspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\health\\_healthstatuspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\services\\healthmonitoringhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\services\\healthmonitoringhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{527D0F75-F2DC-4BF1-9E44-B299EC3D3750}|HealthMonitoringService\\HealthMonitoringService.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthmonitoringservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527D0F75-F2DC-4BF1-9E44-B299EC3D3750}|HealthMonitoringService\\HealthMonitoringService.csproj|solutionrelative:healthmonitoringservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\moviediscussionservice_webrole\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MovieDiscussionService_WebRole||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -47,20 +31,68 @@
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|MovieDiscussionService||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{97133FD8-9E6F-4CC0-B369-476E90225355}|AdminTools\\AdminTools.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\admintools\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97133FD8-9E6F-4CC0-B369-476E90225355}|AdminTools\\AdminTools.csproj|solutionrelative:admintools\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\webrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\healthstatusservice_webrole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\healthstatusservice_webrole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\models\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\ServiceDefinition.csdef||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|solutionrelative:MovieDiscussionService\\ServiceDefinition.csdef||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\health\\_healthstatuspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\health\\_healthstatuspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\services\\healthmonitoringhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\services\\healthmonitoringhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\health\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\health\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{527D0F75-F2DC-4BF1-9E44-B299EC3D3750}|HealthMonitoringService\\HealthMonitoringService.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\healthmonitoringservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{527D0F75-F2DC-4BF1-9E44-B299EC3D3750}|HealthMonitoringService\\HealthMonitoringService.csproj|solutionrelative:healthmonitoringservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\ServiceDefinition.csdef||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|solutionrelative:MovieDiscussionService\\ServiceDefinition.csdef||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\models\\healthrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,14 +126,6 @@
       "RelativeMoniker": "D:0:0:{527D0F75-F2DC-4BF1-9E44-B299EC3D3750}|HealthMonitoringService\\HealthMonitoringService.csproj|solutionrelative:healthmonitoringservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\healthstatusservice_webrole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\healthstatusservice_webrole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|e:\\fakultet\\cloud\\projekat\\moviediscussionservice\\healthstatusservice_webrole\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -118,16 +142,8 @@
       "RelativeMoniker": "D:0:0:{E8B126A4-59FC-4329-9C50-89B66D4A7F0B}|MovieDiscussionService\\MovieDiscussionService.ccproj|solutionrelative:HealthMonitoringService\\HealthMonitoringService.csproj||{C1C21263-6FDE-4EC2-9D4C-2B238680F849}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\controllers\\appcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -166,24 +182,12 @@
       "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\interfaces\\imovierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97133FD8-9E6F-4CC0-B369-476E90225355}|AdminTools\\AdminTools.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\admintools\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97133FD8-9E6F-4CC0-B369-476E90225355}|AdminTools\\AdminTools.csproj|solutionrelative:admintools\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_data\\entities\\discussion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\entities\\discussion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_data\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\moviediscussionservice_data\\repositories\\discussionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -250,100 +254,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminTools",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\AdminTools\\AdminTools.csproj",
-              "RelativeDocumentMoniker": "AdminTools\\AdminTools.csproj",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\AdminTools\\AdminTools.csproj",
-              "RelativeToolTip": "AdminTools\\AdminTools.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-17T14:51:35.583Z",
+              "DocumentIndex": 0,
+              "Title": "AccountController .cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAxwDkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T14:29:33.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_HealthStatusPartial.cshtml",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
-              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
-              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-18T11:51:54.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
-              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
-              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-17T15:00:55.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HealthMonitoringService",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj",
-              "RelativeDocumentMoniker": "HealthMonitoringService\\HealthMonitoringService.csproj",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj",
-              "RelativeToolTip": "HealthMonitoringService\\HealthMonitoringService.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-17T14:51:33.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WebRole.cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\WebRole.cs",
-              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\WebRole.cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\WebRole.cs",
-              "RelativeToolTip": "MovieDiscussionService_WebRole\\WebRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T17:29:17.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HealthMonitoringHttpService.cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
-              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
-              "RelativeToolTip": "HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T12:05:06.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WorkerRole.cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\WorkerRole.cs",
-              "RelativeDocumentMoniker": "HealthMonitoringService\\WorkerRole.cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\WorkerRole.cs",
-              "RelativeToolTip": "HealthMonitoringService\\WorkerRole.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAIwF4AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T01:20:24.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "MovieDiscussionService_WebRole",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj",
               "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj",
@@ -355,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "NotificationService",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\NotificationService\\NotificationService.csproj",
               "RelativeDocumentMoniker": "NotificationService\\NotificationService.csproj",
@@ -367,7 +295,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
+              "Title": "AdminTools",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\AdminTools\\AdminTools.csproj",
+              "RelativeDocumentMoniker": "AdminTools\\AdminTools.csproj",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\AdminTools\\AdminTools.csproj",
+              "RelativeToolTip": "AdminTools\\AdminTools.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-17T14:51:35.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HealthMonitoringService",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj",
+              "RelativeDocumentMoniker": "HealthMonitoringService\\HealthMonitoringService.csproj",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj",
+              "RelativeToolTip": "HealthMonitoringService\\HealthMonitoringService.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-17T14:51:33.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MovieDiscussionService_Contracts",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj",
               "RelativeDocumentMoniker": "MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj",
@@ -379,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "MovieDiscussionService_Data",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj",
@@ -391,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "WorkerRoleService",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\WorkerRoleService\\WorkerRoleService.csproj",
               "RelativeDocumentMoniker": "WorkerRoleService\\WorkerRoleService.csproj",
@@ -403,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "MovieDiscussionService",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\MovieDiscussionService.ccproj",
               "RelativeDocumentMoniker": "MovieDiscussionService\\MovieDiscussionService.ccproj",
@@ -415,32 +367,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "packages.config",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\packages.config",
-              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\packages.config",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\packages.config",
-              "RelativeToolTip": "MovieDiscussionService_WebRole\\packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-18T12:19:23.612Z"
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\AdminTools\\Program.cs",
+              "RelativeDocumentMoniker": "AdminTools\\Program.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\AdminTools\\Program.cs",
+              "RelativeToolTip": "AdminTools\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T03:40:02.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ServiceDefinition.csdef",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\ServiceDefinition.csdef",
-              "RelativeDocumentMoniker": "MovieDiscussionService\\ServiceDefinition.csdef",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\ServiceDefinition.csdef",
-              "RelativeToolTip": "MovieDiscussionService\\ServiceDefinition.csdef",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBsAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000773|",
-              "WhenOpened": "2025-09-18T07:42:44.556Z",
+              "DocumentIndex": 12,
+              "Title": "HealthStatusService_WebRole.csproj",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+              "RelativeToolTip": "HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-17T14:51:38.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Models\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Models\\UserViewModel.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Models\\UserViewModel.cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Models\\UserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T13:15:46.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WebRole.cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\WebRole.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\WebRole.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\WebRole.cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\WebRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T17:29:17.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Web.config",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Web.config",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Web.config",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Web.config",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-18T07:36:28.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Entities\\User.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\User.cs",
+              "RelativeToolTip": "MovieDiscussionService_Data\\Entities\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T03:39:27.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "MovieDiscussionService_Data\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T02:53:18.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Controllers\\HealthController.cs",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Controllers\\HealthController.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Controllers\\HealthController.cs",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Controllers\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T15:00:38.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Program.cs",
               "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Program.cs",
@@ -454,17 +479,90 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "HealthController.cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Controllers\\HealthController.cs",
-              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Controllers\\HealthController.cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Controllers\\HealthController.cs",
-              "RelativeToolTip": "HealthStatusService_WebRole\\Controllers\\HealthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAACAAAAAAAAAA==",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\HealthController.cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Controllers\\HealthController.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\HealthController.cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Controllers\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T15:00:38.321Z"
+              "WhenOpened": "2025-09-18T02:33:27.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
+              "Title": "_HealthStatusPartial.cshtml",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-18T11:51:54.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HealthMonitoringHttpService.cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:05:06.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T15:00:55.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WorkerRole.cs",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\WorkerRole.cs",
+              "RelativeDocumentMoniker": "HealthMonitoringService\\WorkerRole.cs",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\WorkerRole.cs",
+              "RelativeToolTip": "HealthMonitoringService\\WorkerRole.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAIwF4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T01:20:24.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "packages.config",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\packages.config",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\packages.config",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\packages.config",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-18T12:19:23.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ServiceDefinition.csdef",
+              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\ServiceDefinition.csdef",
+              "RelativeDocumentMoniker": "MovieDiscussionService\\ServiceDefinition.csdef",
+              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\ServiceDefinition.csdef",
+              "RelativeToolTip": "MovieDiscussionService\\ServiceDefinition.csdef",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwBsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000773|",
+              "WhenOpened": "2025-09-18T07:42:44.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "HealthRecord.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Models\\HealthRecord.cs",
               "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Models\\HealthRecord.cs",
@@ -476,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\_ViewImports.cshtml",
@@ -488,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Models\\ErrorViewModel.cs",
@@ -500,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "Microsoft.WindowsAzure.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Microsoft\\VisualStudio\\v17.0\\Windows Azure Tools\\2.9\\Microsoft.WindowsAzure.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Microsoft\\VisualStudio\\v17.0\\Windows Azure Tools\\2.9\\Microsoft.WindowsAzure.targets",
@@ -510,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "HealthMonitoringServiceProvider.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringServiceProvider.cs",
               "RelativeDocumentMoniker": "HealthMonitoringService\\HealthMonitoringServiceProvider.cs",
@@ -522,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "IHealthMonitoringServiceProxy.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\Proxies\\IHealthMonitoringServiceProxy.cs",
               "RelativeDocumentMoniker": "HealthMonitoringService\\Proxies\\IHealthMonitoringServiceProxy.cs",
@@ -534,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "packages.config",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\packages.config",
               "RelativeDocumentMoniker": "HealthMonitoringService\\packages.config",
@@ -546,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "app.config",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\app.config",
               "RelativeDocumentMoniker": "HealthMonitoringService\\app.config",
@@ -559,33 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "HealthStatusService_WebRole.csproj",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
-              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
-              "RelativeToolTip": "HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-17T14:51:38.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Web.config",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Web.config",
-              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Web.config",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Web.config",
-              "RelativeToolTip": "MovieDiscussionService_WebRole\\Web.config",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-18T07:36:28.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\appsettings.json",
               "RelativeDocumentMoniker": "HealthStatusService_WebRole\\appsettings.json",
@@ -597,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "ServiceConfiguration.Local.cscfg",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\ServiceConfiguration.Local.cscfg",
               "RelativeDocumentMoniker": "MovieDiscussionService\\ServiceConfiguration.Local.cscfg",
@@ -610,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "HealthMonitoringService [Role]",
               "DocumentMoniker": "WindowsAzure: MovieDiscussionService.HealthMonitoringService",
               "ToolTip": "WindowsAzure: MovieDiscussionService.HealthMonitoringService [Role]",
@@ -619,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "ServiceConfiguration.Cloud.cscfg",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService\\ServiceConfiguration.Cloud.cscfg",
               "RelativeDocumentMoniker": "MovieDiscussionService\\ServiceConfiguration.Cloud.cscfg",
@@ -632,19 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "HealthController.cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\HealthController.cs",
-              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Controllers\\HealthController.cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\HealthController.cs",
-              "RelativeToolTip": "MovieDiscussionService_WebRole\\Controllers\\HealthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T02:33:27.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "AppController.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AppController.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Controllers\\AppController.cs",
@@ -656,19 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "AccountController .cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
-              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
-              "RelativeToolTip": "MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T14:29:33.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Login.cshtml",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Views\\Account\\Login.cshtml",
@@ -680,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "WorkerRole.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\NotificationService\\WorkerRole.cs",
               "RelativeDocumentMoniker": "NotificationService\\WorkerRole.cs",
@@ -692,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "HealthStatusService_WebRole",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
               "RelativeDocumentMoniker": "HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
@@ -704,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "INotificationService.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\Contracts\\INotificationService.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Contracts\\Contracts\\INotificationService.cs",
@@ -716,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "IMovieDiscussionService.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\Contracts\\IMovieDiscussionService.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Contracts\\Contracts\\IMovieDiscussionService.cs",
@@ -728,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "IHealthMonitoringService.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\Contracts\\IHealthMonitoringService.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Contracts\\Contracts\\IHealthMonitoringService.cs",
@@ -740,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "IDiscussionRepository.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\IDiscussionRepository.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Interfaces\\IDiscussionRepository.cs",
@@ -752,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "Register.cshtml",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
@@ -764,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "IMovieRepository.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\IMovieRepository.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Interfaces\\IMovieRepository.cs",
@@ -776,19 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\AdminTools\\Program.cs",
-              "RelativeDocumentMoniker": "AdminTools\\Program.cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\AdminTools\\Program.cs",
-              "RelativeToolTip": "AdminTools\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T03:40:02.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "Discussion.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Discussion.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Entities\\Discussion.cs",
@@ -800,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "Movie.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Movie.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Entities\\Movie.cs",
@@ -812,31 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Entities\\User.cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\User.cs",
-              "RelativeToolTip": "MovieDiscussionService_Data\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T03:39:27.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Interfaces\\IUserRepository.cs",
-              "ToolTip": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\IUserRepository.cs",
-              "RelativeToolTip": "MovieDiscussionService_Data\\Interfaces\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T02:53:18.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "DiscussionRepository.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Repositories\\DiscussionRepository.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Repositories\\DiscussionRepository.cs",
@@ -848,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "MovieRepository.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Repositories\\MovieRepository.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Repositories\\MovieRepository.cs",
@@ -860,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "UserDataRepository.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Repositories\\UserDataRepository.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Repositories\\UserDataRepository.cs",
@@ -872,7 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "app.config",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\app.config",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\app.config",
@@ -885,7 +897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "packages.config",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\packages.config",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\packages.config",
@@ -897,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "WorkerRole.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\WorkerRoleService\\WorkerRole.cs",
               "RelativeDocumentMoniker": "WorkerRoleService\\WorkerRole.cs",
@@ -909,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Global.asax.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Global.asax.cs",
@@ -921,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "MoviesController.cs",
               "DocumentMoniker": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Controllers\\MoviesController.cs",

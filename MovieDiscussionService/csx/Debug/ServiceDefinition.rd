@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="MovieDiscussionService" generation="1" functional="0" release="0" Id="4886da5a-e4c3-436e-9630-40eb1cd5a239" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="MovieDiscussionService" generation="1" functional="0" release="0" Id="242940a7-9a1c-4f7f-82a7-e5ec698d594b" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="MovieDiscussionServiceGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -192,14 +192,14 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="c923ca04-6f93-4db4-b948-a8350b1d3ea2" ref="Microsoft.RedDog.Contract\ServiceContract\MovieDiscussionServiceContract@ServiceDefinition">
+    <implementation Id="64783f87-2352-45d1-9f0b-3ed13c5a68d6" ref="Microsoft.RedDog.Contract\ServiceContract\MovieDiscussionServiceContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="447ab446-3bca-437f-b5e6-b503bbfbae88" ref="Microsoft.RedDog.Contract\Interface\HealthMonitoringService:HttpIn@ServiceDefinition">
+        <interfaceReference Id="f6a8f2d1-acd7-47bc-9d57-248909450d47" ref="Microsoft.RedDog.Contract\Interface\HealthMonitoringService:HttpIn@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/MovieDiscussionService/MovieDiscussionServiceGroup/HealthMonitoringService:HttpIn" />
           </inPort>
         </interfaceReference>
-        <interfaceReference Id="ca9f8e62-3d87-4c7b-b921-dcb7e97040e4" ref="Microsoft.RedDog.Contract\Interface\MovieDiscussionService_WebRole:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="ff92d8d0-a8da-42e2-bdd4-1db2e08a43cb" ref="Microsoft.RedDog.Contract\Interface\MovieDiscussionService_WebRole:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/MovieDiscussionService/MovieDiscussionServiceGroup/MovieDiscussionService_WebRole:Endpoint1" />
           </inPort>
