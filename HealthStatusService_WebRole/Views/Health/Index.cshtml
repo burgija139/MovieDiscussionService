@@ -1,20 +1,22 @@
-﻿@model IQueryable<MovieDiscussionService_Contracts.Contracts.HealthCheckRecord>
+﻿@model List<HealthStatusService_WebRole.Models.HealthRecord>
 
-<h2>Health Status (placeholder)</h2>
+<h2>Service Health Status <small>(Auto-refreshing every 3 seconds)</small></h2>
 
-<table border="1">
-    <tr>
-        <th>Timestamp</th>
-        <th>Service</th>
-        <th>Status</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.Timestamp</td>
-            <td>@item.ServiceName</td>
-            <td>@item.Status</td>
-        </tr>
-    }
-</table>
+<div id="health-data">
+    @await Html.PartialAsync("_HealthStatusPartial", Model)
+</div>
 
+@section Scripts {
+    <script>
+        function refreshHealthData() {
+            fetch('@Url.Action("HealthStatusPartial", "Health")')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('health-data').innerHTML = data;
+                });
+        }
+
+        setInterval(refreshHealthData, 10000);
+        refreshHealthData();
+    </script>
+}

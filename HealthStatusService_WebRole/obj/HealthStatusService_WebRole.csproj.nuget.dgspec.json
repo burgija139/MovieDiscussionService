@@ -4,26 +4,6 @@
     "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj": {}
   },
   "projects": {
-    "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj": {
-      "restore": {
-        "projectUniqueName": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj",
-        "projectName": "HealthMonitoringService",
-        "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj": {
-                "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -51,17 +31,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj": {
-                "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\HealthMonitoringService\\HealthMonitoringService.csproj"
-              },
-              "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj": {
-                "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj"
-              },
-              "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj": {
-                "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -79,6 +49,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Azure.Data.Tables": {
+              "target": "Package",
+              "version": "[12.8.3, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -100,38 +80,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
-      }
-    },
-    "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj": {
-      "restore": {
-        "projectUniqueName": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj",
-        "projectName": "MovieDiscussionService_Contracts",
-        "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Contracts\\MovieDiscussionService_Contracts.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj": {
-      "restore": {
-        "projectUniqueName": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj",
-        "projectName": "MovieDiscussionService_Data",
-        "projectPath": "E:\\Fakultet\\Cloud\\Projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
       }
     }
   }

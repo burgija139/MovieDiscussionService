@@ -1,12 +1,13 @@
 ﻿using Microsoft.Azure;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
+using MovieDiscussionService_Data.Interfaces;
 using System;
 using System.Linq;
 
 namespace MovieDiscussionService_Data.Repositories
 {
-	public class UserDataRepository
+	public class UserDataRepository : IUserRepository
 	{
 		private CloudStorageAccount _storageAccount;
 		private CloudTable _table;

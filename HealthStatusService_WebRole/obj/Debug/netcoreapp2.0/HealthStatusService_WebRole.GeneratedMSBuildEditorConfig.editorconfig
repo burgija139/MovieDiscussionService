@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = HealthStatusService_WebRole
+build_property.ProjectDir = E:\Fakultet\Cloud\Projekat\MovieDiscussionService\HealthStatusService_WebRole\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

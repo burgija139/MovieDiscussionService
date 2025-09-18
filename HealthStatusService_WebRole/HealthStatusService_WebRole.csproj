@@ -7,9 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HealthMonitoringService\HealthMonitoringService.csproj" />
-    <ProjectReference Include="..\MovieDiscussionService_Contracts\MovieDiscussionService_Contracts.csproj" />
-    <ProjectReference Include="..\MovieDiscussionService_Data\MovieDiscussionService_Data.csproj" />
+    <Compile Remove="Controllers\MoviesController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" Version="12.8.3" />
+  <PackageReference Include="System.Text.Json" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
