@@ -1,0 +1,48 @@
+﻿@model List<HealthStatusService_WebRole.Models.HealthRecord>
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-warning">
+        No health data available. Please check if HealthMonitoringService is running.
+    </div>
+}
+else
+{
+    var serviceGroups = Model.GroupBy(r => r.ServiceName);
+
+    foreach (var group in serviceGroups)
+    {
+        <div class="service-panel">
+            <h3>@group.Key</h3>
+
+            @{
+                var totalChecks = group.Count();
+                var okChecks = group.Count(r => r.Status == "OK");
+                var availabilityPercent = totalChecks > 0 ? (okChecks * 100.0 / totalChecks) : 0;
+            }
+
+            <div class="availability">
+                Availability: <span class="percentage">@availabilityPercent.ToString("0.00")%</span>
+                (@okChecks of @totalChecks checks)
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var record in group.OrderByDescending(r => r.CheckTime).Take(10))
+                    {
+                        <tr class="@(record.Status == "OK" ? "table-success" : "table-danger")">
+                            <td>@record.CheckTime.ToString("g")</td>
+                            <td>@record.Status</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+}

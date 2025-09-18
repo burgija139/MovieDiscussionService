@@ -1,26 +1,27 @@
-﻿using HealthStatusService_WebRole.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using MovieDiscussionService_Contracts.Contracts;
-using MovieDiscussionService_HealthMonitoringService.Repositories;
+﻿using Microsoft.AspNetCore.Mvc;
+using HealthStatusService_WebRole.Services;
 
 namespace HealthStatusService_WebRole.Controllers
 {
 	public class HealthController : Controller
 	{
-		private readonly IHealthCheckRepository _repo;
+		private readonly HealthMonitoringHttpService _healthService;
 
-		public HealthController()
+		public HealthController(HealthMonitoringHttpService healthService)
 		{
-			// Placeholder: direktno kreiramo repository
-			_repo = new HealthCheckRepository();
+			_healthService = healthService;
 		}
 
-		// GET: Health/Index
-		public IActionResult Index()
+		public async Task<IActionResult> Index()
 		{
-			var data = _repo.GetLastTwoHours(); // kasnije čita iz tabele
-			return View(data); // View će prikazati listu / grafikon
+			var records = await _healthService.GetHealthRecordsAsync();
+			return View(records);
+		}
+
+		public async Task<IActionResult> HealthStatusPartial()
+		{
+			var records = await _healthService.GetHealthRecordsAsync();
+			return PartialView("_HealthStatusPartial", records);
 		}
 	}
 }

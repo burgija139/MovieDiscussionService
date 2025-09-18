@@ -1,0 +1,6 @@
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\HealthStatusService_WebRole\obj\Debug\netcoreapp2.0\HealthStatusService_WebRole.csproj.AssemblyReference.cache
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\HealthStatusService_WebRole\obj\Debug\netcoreapp2.0\HealthStatusService_WebRole.GeneratedMSBuildEditorConfig.editorconfig
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\HealthStatusService_WebRole\obj\Debug\netcoreapp2.0\HealthStatusService_WebRole.AssemblyInfoInputs.cache
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\HealthStatusService_WebRole\obj\Debug\netcoreapp2.0\HealthStatusService_WebRole.AssemblyInfo.cs
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\HealthStatusService_WebRole\obj\Debug\netcoreapp2.0\HealthStatusService_WebRole.csproj.CoreCompileInputs.cache
+E:\Fakultet\Cloud\Projekat\MovieDiscussionService\HealthStatusService_WebRole\obj\Debug\netcoreapp2.0\HealthStatusService_WebRole.sourcelink.json

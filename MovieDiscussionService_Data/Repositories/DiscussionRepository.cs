@@ -2,12 +2,13 @@
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
 using MovieDiscussionService_Data.Entities;
+using MovieDiscussionService_Data.Interfaces;
 using System;
 using System.Linq;
 
 namespace MovieDiscussionService_Data.Repositories
 {
-	public class DiscussionRepository
+	public class DiscussionRepository : IDiscussionRepository
 	{
 		private CloudStorageAccount _storageAccount;
 		private CloudTable _table;
