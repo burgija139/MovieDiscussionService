@@ -101,15 +101,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\AlertEmail.cs" />
     <Compile Include="Entities\Discussion.cs" />
     <Compile Include="Entities\HealthCheckRecord.cs" />
     <Compile Include="Entities\Movie.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Interfaces\IAlertEmailRepository.cs" />
     <Compile Include="Interfaces\IDiscussionRepository.cs" />
     <Compile Include="Interfaces\IHealthCheckRepository.cs" />
     <Compile Include="Interfaces\IMovieRepository.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AlertEmailRepository.cs" />
     <Compile Include="Repositories\DiscussionRepository.cs" />
     <Compile Include="Repositories\HealthCheckRepository.cs" />
     <Compile Include="Repositories\MovieRepository.cs" />

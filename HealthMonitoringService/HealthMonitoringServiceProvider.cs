@@ -13,6 +13,7 @@ namespace MovieDiscussionService_HealthMonitoringService
 		public HealthMonitoringServiceProvider(string connectionString)
 		{
 			_repo = new HealthCheckRepository(connectionString);
+			_alertEmailRepo = new AlertEmailRepository(connectionString);
 		}
 
 		public List<HealthCheckRecord> GetLastTwoHours()
@@ -23,6 +24,23 @@ namespace MovieDiscussionService_HealthMonitoringService
 		public void AddRecord(HealthCheckRecord record)
 		{
 			_repo.AddRecordAsync(record).Wait();
+		}
+
+		private readonly IAlertEmailRepository _alertEmailRepo;
+
+		public List<string> GetAlertEmails()
+		{
+			return _alertEmailRepo.GetAllAlertEmails();
+		}
+
+		public void AddAlertEmail(string email)
+		{
+			_alertEmailRepo.AddAlertEmailAsync(email).Wait();
+		}
+
+		public void RemoveAlertEmail(string email)
+		{
+			_alertEmailRepo.RemoveAlertEmailAsync(email).Wait();
 		}
 	}
 }
