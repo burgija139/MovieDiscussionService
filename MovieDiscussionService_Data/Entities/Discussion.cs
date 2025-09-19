@@ -12,10 +12,16 @@ namespace MovieDiscussionService_Data.Entities
 		public string MovieTitle { get; set; } // Veza ka filmu
 		public string AuthorEmail { get; set; } // Ko je pokrenuo diskusiju
 		public string Title { get; set; }
-		public string Content { get; set; }
+		//public string Content { get; set; }
 		public DateTime CreatedAt { get; set; }
 
-		public Discussion(string id)
+		public int PositiveCount { get; set; }
+
+        public int NegativeCount { get; set; }
+
+		public int CommentCount { get; set; }
+
+        public Discussion(string id)
 		{
 			PartitionKey = "Discussion";
 			RowKey = id; // može GUID ili kombinacija MovieTitle+Timestamp

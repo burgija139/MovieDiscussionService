@@ -1,0 +1,233 @@
+﻿@using MovieDiscussionService_Data.Entities
+@model IEnumerable<MovieDiscussionService_Data.Entities.Discussion>
+@{
+    ViewBag.Title = "Movie Discussions";
+    Layout = null;
+    var user = ViewBag.User; // MovieDiscussionService_Data.User ili null
+    int page = ViewBag.Page ?? 1;
+    int pageSize = ViewBag.PageSize ?? 10;
+    int totalPages = ViewBag.TotalPages ?? 1;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Discussions - MovieDiscussion</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f2023, #252a31, #2c3e50);
+            color: #f1f1f1;
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 16px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .brand {
+            font-size: 28px;
+            font-weight: 700;
+            color: #f5c518;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn {
+            background: #f5c518;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .btn:hover {
+                background: #e4b912;
+            }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+            display: flex;
+            gap: 14px;
+        }
+
+        .poster {
+            width: 90px;
+            height: 130px;
+            border-radius: 6px;
+            background: #333;
+            object-fit: cover;
+            flex: 0 0 auto;
+        }
+
+        .meta h3 {
+            margin: 0 0 6px 0;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .meta .sub {
+            color: #ccc;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .meta .counts {
+            font-size: 12px;
+            color: #ddd;
+            display: flex;
+            gap: 14px;
+            margin-top: 6px;
+        }
+
+            .meta .counts span {
+                background: #222;
+                padding: 4px 8px;
+                border-radius: 999px;
+            }
+
+        .view-link {
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .pagination {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .page-link {
+            background: #2a2f38;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+            .page-link.active {
+                background: #f5c518;
+                color: #000;
+                font-weight: 700;
+            }
+
+        .topbar {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .pill {
+            background: #2a2f38;
+            color: #ddd;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+        }
+
+        .alert {
+            margin-top: 8px;
+            color: #ffb3b3;
+        }
+
+        a {
+            color: #f5c518;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="topbar">
+                <div class="brand">MovieDiscussion</div>
+                <div class="pill">Page @page of @totalPages</div>
+            </div>
+            <div class="actions">
+                @if (user != null && user.IsVerified)
+                {
+                    <a class="btn" href="@Url.Action("New","App")">+ Nova diskusija</a>
+                }
+                <a class="btn" href="@Url.Action("Logout","Account")">Logout</a>
+            </div>
+        </div>
+
+        @if (TempData["Error"] != null)
+        {<div class="alert">@TempData["Error"]</div>}
+        @if (TempData["Success"] != null)
+        {<div class="alert" style="color:#c9ffb3;">@TempData["Success"]</div>}
+
+        <div class="grid">
+            @foreach (var d in Model)
+            {
+                // za poster i opis filma dohvat se radi u Details; ovde prikaz minimalnog meta skupa
+                <div class="card">
+                    <img class="poster" src="@Url.Action("PosterProxy","Static", new { title = d.MovieTitle })" onerror="this.style.display='none';" alt="poster" />
+                    <div class="meta">
+                        <h3>@d.Title</h3>
+                        <div class="sub">Film: <strong>@d.MovieTitle</strong> • Autor: @d.AuthorEmail • @d.CreatedAt.ToLocalTime()</div>
+                        <div class="counts">
+                            <span>👍 @d.PositiveCount</span>
+                            <span>👎 @d.NegativeCount</span>
+                            <span>💬 @d.CommentCount</span>
+                        </div>
+                        <a class="view-link btn" href="@Url.Action("Details","App", new { id = d.RowKey })">Otvori</a>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="pagination">
+            @{
+                int start = Math.Max(1, page - 2);
+                int end = Math.Min(totalPages, page + 2);
+                if (page > 1)
+                {
+                    <a class="page-link" href="@Url.Action("Index","App", new { page = page - 1, pageSize = pageSize })">«</a>
+                }
+                for (int i = start; i <= end; i++)
+                {
+                    var cls = i == page ? "page-link active" : "page-link";
+                    <a class="@cls" href="@Url.Action("Index","App", new { page = i, pageSize = pageSize })">@i</a>
+                }
+                if (page < totalPages)
+                {
+                    <a class="page-link" href="@Url.Action("Index","App", new { page = page + 1, pageSize = pageSize })">»</a>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>
