@@ -1,0 +1,149 @@
+﻿@{
+    ViewBag.Title = "Nova diskusija";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Nova diskusija - MovieDiscussion</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f2023, #252a31, #2c3e50);
+            color: #f1f1f1;
+        }
+
+        .wrap {
+            max-width: 800px;
+            margin: 30px auto;
+            background: rgba(0,0,0,0.6);
+            padding: 24px 28px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            color: #f5c518;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .grid-full {
+            grid-column: 1 / -1;
+        }
+
+        input[type="text"], input[type="number"], input[type="url"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #f1f1f1;
+            color: #333;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .row {
+            margin: 10px 0;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            background: #f5c518;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background: #e4b912;
+            }
+
+        a {
+            color: #f5c518;
+            text-decoration: none;
+        }
+
+        label {
+            font-size: 12px;
+            color: #ddd;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        small {
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Pokreni novu diskusiju</h1>
+        @using (Html.BeginForm("Create", "App", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="grid">
+                <div>
+                    <label>Naziv filma</label>
+                    <input type="text" name="MovieTitle" required />
+                </div>
+                <div>
+                    <label>Godina izlaska</label>
+                    <input type="number" name="Year" required min="1888" max="2100" />
+                </div>
+                <div>
+                    <label>Žanr</label>
+                    <input type="text" name="Genre" required />
+                </div>
+                <div>
+                    <label>IMDB ocena</label>
+                    <input type="number" name="ImdbRating" step="0.1" min="0" max="10" required />
+                </div>
+                <div class="grid-full">
+                    <label>Sinopsis</label>
+                    <textarea name="Synopsis" required></textarea>
+                </div>
+                <div>
+                    <label>Trajanje (npr. 2h 15m)</label>
+                    <input type="text" name="Duration" required />
+                </div>
+                <div>
+                    <label>Naslovna slika (URL)</label>
+                    <input type="url" name="PosterUrl" />
+                </div>
+                <div class="grid-full">
+                    <label>Naslov diskusije</label>
+                    <input type="text" name="Title" required />
+                </div>
+            </div>
+            <div class="actions">
+                <button type="submit" class="btn">Kreiraj</button>
+                <a class="btn" href="@Url.Action("Index","App")">Nazad</a>
+            </div>
+            <small>Diskusiju mogu pokrenuti samo verifikovani autori.</small>
+        }
+    </div>
+</body>
+</html>

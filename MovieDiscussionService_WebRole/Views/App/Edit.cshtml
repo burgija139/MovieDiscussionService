@@ -1,0 +1,151 @@
+﻿@model MovieDiscussionService_WebRole.Models.EditDiscussionVm
+@{
+    ViewBag.Title = "Izmena diskusije";
+    Layout = null;
+    var d = Model.Discussion;
+    var m = Model.Movie;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Izmena - @d.Title</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f2023, #252a31, #2c3e50);
+            color: #f1f1f1;
+        }
+
+        .wrap {
+            max-width: 800px;
+            margin: 30px auto;
+            background: rgba(0,0,0,0.6);
+            padding: 24px 28px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            color: #f5c518;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .grid-full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-size: 12px;
+            color: #ddd;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input[type="text"], input[type="number"], input[type="url"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #f1f1f1;
+            color: #333;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            background: #f5c518;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background: #e4b912;
+            }
+
+        a {
+            color: #f5c518;
+            text-decoration: none;
+        }
+
+        .muted {
+            color: #bbb;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Izmena: @d.Title</h1>
+
+        @using (Html.BeginForm("Edit", "App", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.Hidden("id", d.RowKey)
+
+            <div class="grid">
+                <div class="grid-full">
+                    <label>Naslov diskusije</label>
+                    <input type="text" name="Title" value="@d.Title" required />
+                </div>
+
+                <div class="grid-full">
+                    <label>Sinopsis</label>
+                    <textarea name="Synopsis" required>@m?.Synopsis</textarea>
+                </div>
+
+                <div>
+                    <label>IMDB ocena</label>
+                    <input type="number" name="ImdbRating" step="0.1" min="0" max="10" value="@(m?.ImdbRating ?? 0)" required />
+                </div>
+                <div>
+                    <label>Žanr</label>
+                    <input type="text" name="Genre" value="@m?.Genre" required />
+                </div>
+                <div>
+                    <label>Godina izlaska</label>
+                    <input type="number" name="Year" min="1888" max="2100" value="@(m?.Year ?? 2000)" required />
+                </div>
+                <div>
+                    <label>Trajanje</label>
+                    <input type="text" name="Duration" value="@m?.Duration" required />
+                </div>
+                <div class="grid-full">
+                    <label>Naslovna slika (URL)</label>
+                    <input type="url" name="PosterUrl" value="@m?.PosterUrl" />
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn">Sačuvaj</button>
+                <a class="btn" href="@Url.Action("Details","App", new { id = d.RowKey })">Otkaži</a>
+            </div>
+            <div class="muted" style="margin-top:6px;">Napomena: broj glasova i komentara se ažuriraju kroz interakcije korisnika.</div>
+        }
+    </div>
+</body>
+</html>

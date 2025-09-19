@@ -1,0 +1,330 @@
+﻿@using MovieDiscussionService_Data.Entities
+@model MovieDiscussionService_WebRole.Models.DiscussionDetailsVm
+@{
+    ViewBag.Title = "Detalji diskusije";
+    Layout = null;
+    var user = ViewBag.User; // MovieDiscussionService_Data.User ili null
+    bool isAuthor = ViewBag.IsAuthor ?? false;
+    bool isFollowing = ViewBag.IsFollowing ?? false;
+    var d = Model.Discussion;
+    var m = Model.Movie;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@d.Title - MovieDiscussion</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f2023, #252a31, #2c3e50);
+            color: #f1f1f1;
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 16px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #f5c518;
+        }
+
+        .btn {
+            background: #f5c518;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .btn:hover {
+                background: #e4b912;
+            }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #f5c518;
+            color: #f5c518;
+        }
+
+            .btn-outline:hover {
+                background: #f5c518;
+                color: #000;
+            }
+
+        .meta {
+            display: flex;
+            gap: 16px;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+        }
+
+        .row {
+            display: flex;
+            gap: 18px;
+        }
+
+        .poster {
+            width: 220px;
+            height: 320px;
+            border-radius: 8px;
+            background: #333;
+            object-fit: cover;
+        }
+
+        .counts {
+            display: flex;
+            gap: 10px;
+            margin: 8px 0;
+        }
+
+        .pill {
+            background: #222;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            color: #ddd;
+        }
+
+        .section {
+            margin-top: 18px;
+        }
+
+        .comments {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .comment {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .muted {
+            color: #bbb;
+            font-size: 12px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .danger {
+            background: #e85d5d;
+            color: #fff;
+        }
+
+            .danger:hover {
+                background: #d34c4c;
+            }
+
+        .split {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            color: #f5c518;
+            text-decoration: none;
+        }
+
+        form {
+            display: inline;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            background: #f1f1f1;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            background: #f1f1f1;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="title">@d.Title</div>
+            <div class="actions">
+                <a class="btn" href="@Url.Action("Index","App")">Nazad</a>
+                @if (isAuthor)
+                {
+                    <a class="btn" href="@Url.Action("Edit","App", new { id = d.RowKey })">Izmeni</a>
+                    using (Html.BeginForm("Delete", "App", FormMethod.Post, new { onsubmit = "return confirm('Obrisati diskusiju?');" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.Hidden("id", d.RowKey)
+                        <button type="submit" class="btn danger">Obriši</button>
+                    }
+                }
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="row">
+                <img class="poster" src="@(m != null ? m.PosterUrl : "")" onerror="this.style.display='none';" alt="poster" />
+                <div>
+                    <div class="meta">
+                        <div><strong>Film:</strong> @d.MovieTitle</div>
+                        <div><strong>Autor:</strong> @d.AuthorEmail</div>
+                        <div class="muted">@d.CreatedAt.ToLocalTime()</div>
+                    </div>
+                    <div class="section">
+                        <div><strong>Žanr:</strong> @(m != null ? m.Genre : "")</div>
+                        <div><strong>Godina:</strong> @(m != null ? m.Year.ToString() : "")</div>
+                        <div><strong>IMDB:</strong> @(m != null ? m.ImdbRating.ToString() : "")</div>
+                        <div><strong>Trajanje:</strong> @(m != null ? m.Duration : "")</div>
+                    </div>
+                    <div class="section">
+                        <div><strong>Sinopsis:</strong></div>
+                        <div>@(m != null ? m.Synopsis : "")</div>
+                    </div>
+                    <div class="section counts">
+                        <span class="pill">👍 @d.PositiveCount</span>
+                        <span class="pill">👎 @d.NegativeCount</span>
+                        <span class="pill">💬 @d.CommentCount</span>
+                        @if (user != null)
+                        {
+                            <span class="pill">@((bool)isFollowing ? "Pratiš" : "Ne pratiš")</span>
+                        }
+                    </div>
+
+                    @if (user != null && !isAuthor)
+                    {
+                        <div class="actions section">
+                            @using (Html.BeginForm("Vote", "App", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.Hidden("id", d.RowKey)
+                                @Html.Hidden("value", 1)
+                                <button type="submit" class="btn">👍 Pozitivno</button>
+                            }
+                            @using (Html.BeginForm("Vote", "App", FormMethod.Post))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.Hidden("id", d.RowKey)
+                                @Html.Hidden("value", -1)
+                                <button type="submit" class="btn btn-outline">👎 Negativno</button>
+                            }
+                        </div>
+                    }
+
+                    @if (user != null)
+                    {
+                        <div class="actions section">
+                            @if (!(bool)isFollowing)
+                            {
+                                using (Html.BeginForm("Follow", "App", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    @Html.Hidden("id", d.RowKey)
+                                    <button type="submit" class="btn">+ Prati</button>
+                                }
+                            }
+                            else
+                            {
+                                using (Html.BeginForm("Unfollow", "App", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    @Html.Hidden("id", d.RowKey)
+                                    <button type="submit" class="btn btn-outline">− Otprati</button>
+                                }
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="section split">
+            <h2 style="margin:14px 0;">Komentari (@d.CommentCount)</h2>
+        </div>
+
+        <div class="card">
+            <div class="comments">
+                @if (Model.Comments != null && Model.Comments.Any())
+                {
+                    foreach (var c in Model.Comments)
+                    {
+                        <div class="comment">
+                            <div style="margin-bottom:6px;"><strong>@c.AuthorEmail</strong> <span class="muted">• @c.CreatedAt.ToLocalTime()</span></div>
+                            <div>@c.Text</div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="muted">Nema komentara još uvek.</div>
+                }
+            </div>
+        </div>
+
+        @if (user != null)
+        {
+            <div class="section card">
+                <h3 style="margin-top:0;">Ostavi komentar</h3>
+                @using (Html.BeginForm("Comment", "App", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.Hidden("id", d.RowKey)
+                    <textarea name="text" required placeholder="Napiši komentar..."></textarea>
+                    <div class="actions" style="margin-top:10px;">
+                        <button type="submit" class="btn">Pošalji</button>
+                    </div>
+                }
+                <div class="muted" style="margin-top:6px;">Svi pratioci diskusije biće obavešteni emailom.</div>
+            </div>
+        }
+        else
+        {
+            <div class="section card muted">
+                Prijavi se da bi ostavio komentar, glasao ili pratio diskusiju. <a href="@Url.Action("Login","Account")">Login</a>
+            </div>
+        }
+
+    </div>
+</body>
+</html>
