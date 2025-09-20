@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\",
+  "WorkspaceRootPath": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|e:\\documents\\predavanja\\iv_godina\\cloud\\projekat\\moviediscussionservice\\moviediscussionservice_webrole\\views\\app\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|c:\\users\\burgija\\desktop\\test\\moviediscussionservice\\notificationservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|c:\\users\\burgija\\desktop\\test\\moviediscussionservice\\notificationservice\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|c:\\users\\burgija\\desktop\\test\\moviediscussionservice\\moviediscussionservice_webrole\\views\\app\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\views\\app\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\moviediscussionservice_data\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\moviediscussionservice_data\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\moviediscussionservice_data\\entities\\discussion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\moviediscussionservice_data\\entities\\discussion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\entities\\discussion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,15 +30,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 109,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkerRole.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\NotificationService\\WorkerRole.cs",
+              "RelativeDocumentMoniker": "NotificationService\\WorkerRole.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\NotificationService\\WorkerRole.cs",
+              "RelativeToolTip": "NotificationService\\WorkerRole.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T16:37:01.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\NotificationService\\packages.config",
+              "RelativeDocumentMoniker": "NotificationService\\packages.config",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\NotificationService\\packages.config",
+              "RelativeToolTip": "NotificationService\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-20T16:37:01.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Movie.cs",
-              "DocumentMoniker": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Movie.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Movie.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Entities\\Movie.cs",
-              "ToolTip": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Movie.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Movie.cs",
               "RelativeToolTip": "MovieDiscussionService_Data\\Entities\\Movie.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwBEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -38,11 +72,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Discussion.cs",
-              "DocumentMoniker": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Discussion.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Discussion.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Entities\\Discussion.cs",
-              "ToolTip": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Discussion.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\MovieDiscussionService_Data\\Entities\\Discussion.cs",
               "RelativeToolTip": "MovieDiscussionService_Data\\Entities\\Discussion.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -50,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\App\\Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\App\\Details.cshtml",
               "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Views\\App\\Details.cshtml",
-              "ToolTip": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\App\\Details.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\test\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\App\\Details.cshtml",
               "RelativeToolTip": "MovieDiscussionService_WebRole\\Views\\App\\Details.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAOMAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAOMAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-19T20:43:53.739Z",
               "EditorCaption": ""

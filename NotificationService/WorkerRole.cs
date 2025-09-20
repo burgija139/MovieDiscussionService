@@ -26,6 +26,8 @@ namespace NotificationService
 			_storageAccount = CloudStorageAccount.Parse(
 				CloudConfigurationManager.GetSetting("DataConnectionString"));
 
+			int test = 5;
+
 			// Kreiranje/vezivanje na queue "notifications"
 			var queueClient = _storageAccount.CreateCloudQueueClient();
 			_notificationsQueue = queueClient.GetQueueReference("notifications");
