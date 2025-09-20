@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|e:\\documents\\predavanja\\iv_godina\\cloud\\projekat\\moviediscussionservice\\moviediscussionservice_data\\interfaces\\inotificationlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\moviediscussionservice_data\\interfaces\\inotificationlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\interfaces\\inotificationlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "NotificationService\\app.config",
               "ToolTip": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\NotificationService\\app.config",
               "RelativeToolTip": "NotificationService\\app.config",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-09-20T17:48:37.993Z",
               "EditorCaption": ""
@@ -43,8 +43,7 @@
               "RelativeToolTip": "MovieDiscussionService_Data\\Interfaces\\INotificationLogRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T17:08:53.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T17:08:53.948Z"
             }
           ]
         }
