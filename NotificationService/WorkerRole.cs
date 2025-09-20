@@ -23,6 +23,7 @@ namespace NotificationService
 
         private CloudStorageAccount _storageAccount;
         private CloudQueue _notificationsQueue;
+        private CloudQueue _adminQueue;
 
         private CommentRepository _commentRepo;
         private FollowRepository _followRepo;
@@ -38,6 +39,9 @@ namespace NotificationService
             var queueClient = _storageAccount.CreateCloudQueueClient();
             _notificationsQueue = queueClient.GetQueueReference("notifications");
             _notificationsQueue.CreateIfNotExists();
+
+            _adminQueue = queueClient.GetQueueReference("adminnotificationqueue");
+            _adminQueue.CreateIfNotExists();
 
             _commentRepo = new CommentRepository(_storageAccount);
             _followRepo = new FollowRepository(_storageAccount);
@@ -131,6 +135,14 @@ namespace NotificationService
                     Trace.TraceError($"Error in NotificationService: {ex.Message}");
                     await Task.Delay(TimeSpan.FromSeconds(5), token);
                 }
+                var status = new
+                {
+                    Service = "NotificationService",
+                    Status = "ALIVE",
+                    Timestamp = DateTime.UtcNow
+                };
+                string json = JsonConvert.SerializeObject(status);
+                await _adminQueue.AddMessageAsync(new CloudQueueMessage(json));
             }
         }
 

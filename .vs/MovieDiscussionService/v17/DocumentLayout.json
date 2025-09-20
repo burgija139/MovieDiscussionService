@@ -1,13 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\",
+  "WorkspaceRootPath": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|e:\\documents\\predavanja\\iv_godina\\cloud\\projekat\\moviediscussionservice\\notificationservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{527D0F75-F2DC-4BF1-9E44-B299EC3D3750}|HealthMonitoringService\\HealthMonitoringService.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthmonitoringservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{527D0F75-F2DC-4BF1-9E44-B299EC3D3750}|HealthMonitoringService\\HealthMonitoringService.csproj|solutionrelative:healthmonitoringservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97133FD8-9E6F-4CC0-B369-476E90225355}|AdminTools\\AdminTools.csproj|C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\admintools\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97133FD8-9E6F-4CC0-B369-476E90225355}|AdminTools\\AdminTools.csproj|solutionrelative:admintools\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\notificationservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\workerrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\services\\healthmonitoringhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\services\\healthmonitoringhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\health\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\health\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\views\\health\\_healthstatuspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\views\\health\\_healthstatuspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\moviediscussionservice_webrole\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAC1DB2C-ABA9-4DB6-B850-67371A1BA6BE}|MovieDiscussionService_WebRole\\MovieDiscussionService_WebRole.csproj|solutionrelative:moviediscussionservice_webrole\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|c:\\users\\burgija\\desktop\\pravi-cloud-projekat\\moviediscussionservice\\healthstatusservice_webrole\\healthstatusservice_webrole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{55EC31E4-546E-484C-9C6C-1C6CF76E4B92}|HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj|solutionrelative:healthstatusservice_webrole\\healthstatusservice_webrole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\notificationservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{BF797B93-34BC-41BD-B7F9-CD776CF90A99}|NotificationService\\NotificationService.csproj|solutionrelative:notificationservice\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\moviediscussionservice_data\\interfaces\\inotificationlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\moviediscussionservice_data\\interfaces\\inotificationlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B9EB085-6B5C-4137-86A1-79ED10E8EDAE}|MovieDiscussionService_Data\\MovieDiscussionService_Data.csproj|solutionrelative:moviediscussionservice_data\\interfaces\\inotificationlogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,28 +82,220 @@
       "DocumentGroups": [
         {
           "DockedWidth": 109,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "app.config",
-              "DocumentMoniker": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\NotificationService\\app.config",
-              "RelativeDocumentMoniker": "NotificationService\\app.config",
-              "ToolTip": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\NotificationService\\app.config",
-              "RelativeToolTip": "NotificationService\\app.config",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-20T17:48:37.993Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "HealthStatusService_WebRole\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-20T19:58:04.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "HealthStatusService_WebRole\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-20T19:58:02.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Controllers\\HealthController.cs",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Controllers\\HealthController.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Controllers\\HealthController.cs",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Controllers\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T19:57:04.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HealthMonitoringHttpService.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Services\\HealthMonitoringHttpService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBMAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T19:57:01.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T19:56:51.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T19:56:50.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T19:56:48.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Health\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T19:56:45.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_HealthStatusPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Views\\Health\\_HealthStatusPartial.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T19:56:43.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAL4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-20T19:53:27.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountController .cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "RelativeDocumentMoniker": "MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "RelativeToolTip": "MovieDiscussionService_WebRole\\Controllers\\AccountController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T19:53:15.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Program.cs",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\Program.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\Program.cs",
+              "RelativeToolTip": "HealthStatusService_WebRole\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T19:43:44.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HealthStatusService_WebRole.csproj",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+              "RelativeDocumentMoniker": "HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+              "RelativeToolTip": "HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-20T19:43:40.368Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\AdminTools\\Program.cs",
+              "RelativeDocumentMoniker": "AdminTools\\Program.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\AdminTools\\Program.cs",
+              "RelativeToolTip": "AdminTools\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwEAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T19:41:33.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkerRole.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\NotificationService\\WorkerRole.cs",
+              "RelativeDocumentMoniker": "NotificationService\\WorkerRole.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\NotificationService\\WorkerRole.cs",
+              "RelativeToolTip": "NotificationService\\WorkerRole.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwKAAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T19:14:52.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkerRole.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthMonitoringService\\WorkerRole.cs",
+              "RelativeDocumentMoniker": "HealthMonitoringService\\WorkerRole.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\HealthMonitoringService\\WorkerRole.cs",
+              "RelativeToolTip": "HealthMonitoringService\\WorkerRole.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAuwJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T19:09:13.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\NotificationService\\app.config",
+              "RelativeDocumentMoniker": "NotificationService\\app.config",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\NotificationService\\app.config",
+              "RelativeToolTip": "NotificationService\\app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-20T17:48:37.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "INotificationLogRepository.cs",
-              "DocumentMoniker": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\INotificationLogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\INotificationLogRepository.cs",
               "RelativeDocumentMoniker": "MovieDiscussionService_Data\\Interfaces\\INotificationLogRepository.cs",
-              "ToolTip": "E:\\Documents\\Predavanja\\IV_Godina\\CLOUD\\projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\INotificationLogRepository.cs",
+              "ToolTip": "C:\\Users\\BURGIJA\\Desktop\\pravi-cloud-projekat\\MovieDiscussionService\\MovieDiscussionService_Data\\Interfaces\\INotificationLogRepository.cs",
               "RelativeToolTip": "MovieDiscussionService_Data\\Interfaces\\INotificationLogRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -1,8 +1,11 @@
 ﻿using Microsoft.WindowsAzure.ServiceRuntime;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Queue;
 using MovieDiscussionService_Contracts.Contracts;
 using MovieDiscussionService_Data.Entities;
 using MovieDiscussionService_Data.Repositories;
 using MovieDiscussionService_HealthMonitoringService.Proxies;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,138 +15,182 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading;
+using Microsoft.WindowsAzure.ServiceRuntime;
 
 namespace MovieDiscussionService_HealthMonitoringService
 {
-	public class HealthMonitoringWorker : RoleEntryPoint
-	{
-		private bool _running = true;
-		private HealthMonitoringServiceProvider _service;
-		// Dodaj u HealthMonitoringWorker klasu
-		private HttpListener _listener;
+    public class HealthMonitoringWorker : RoleEntryPoint
+    {
+        private bool _running = true;
+        private HealthMonitoringServiceProvider _service;
+        // Dodaj u HealthMonitoringWorker klasu
 
-		public override bool OnStart()
-		{
-			Trace.WriteLine("HealthMonitoringWorker started.");
+        private CloudStorageAccount _storageAccount;
+        private CloudQueue _adminQueue;
 
-			//Koristi port 50001 koji smo definisali u ServiceDefinition
-			_listener = new HttpListener();
-			_listener.Prefixes.Add("http://localhost:50002/"); // Ovo ne zahteva admin privilegije // + znači "sve adrese"
-			_listener.Start();
+        private HttpListener _listener;
 
-			//Pokreni thread za HTTP zahteve
-			Thread listenerThread = new Thread(ListenForRequests);
-			listenerThread.Start();
+        public override bool OnStart()
+        {
+            Trace.WriteLine("HealthMonitoringWorker started.");
 
-			string connectionString = Environment.GetEnvironmentVariable("DataConnectionString")
-									  ?? "UseDevelopmentStorage=true";
-			_service = new HealthMonitoringServiceProvider(connectionString);
-			return base.OnStart();
-		}
+            // Inicijalizuj storage account pre nego što praviš queue
 
-		private void ListenForRequests()
-		{
-			while (_running)
-			{
-				try
-				{
-					var context = _listener.GetContext();
-					ProcessRequest(context);
-				}
-				catch (Exception ex)
-				{
-					Trace.WriteLine("HTTP Listener error: " + ex.Message);
-				}
-			}
-		}
+            _storageAccount = CloudStorageAccount.Parse(
+                RoleEnvironment.GetConfigurationSettingValue("DataConnectionString"));
 
-		private void ProcessRequest(HttpListenerContext context)
-		{
-			if (context.Request.HttpMethod == "GET" && context.Request.Url.AbsolutePath == "/health-monitoring")
-			{
-				var records = _service.GetLastTwoHours();
-				var json = JsonSerializer.Serialize(records);
+            var queueClient = _storageAccount.CreateCloudQueueClient();
+            _adminQueue = queueClient.GetQueueReference("adminnotificationqueue");
+            _adminQueue.CreateIfNotExists();
 
-				byte[] buffer = Encoding.UTF8.GetBytes(json);
-				context.Response.ContentType = "application/json";
-				context.Response.ContentLength64 = buffer.Length;
-				context.Response.OutputStream.Write(buffer, 0, buffer.Length);
-			}
-			else
-			{
-				context.Response.StatusCode = 404;
-			}
+            // HTTP listener
+            _listener = new HttpListener();
+            _listener.Prefixes.Add("http://localhost:50002/");
+            _listener.Start();
 
-			context.Response.OutputStream.Close();
-		}
+            Thread listenerThread = new Thread(ListenForRequests);
+            listenerThread.Start();
 
-		public override void Run()
-		{
-			Trace.WriteLine("HealthMonitoringWorker Run() method started.");
+            string connectionString = Environment.GetEnvironmentVariable("DataConnectionString")
+                                      ?? "UseDevelopmentStorage=true";
+            _service = new HealthMonitoringServiceProvider(connectionString);
 
-			while (_running)
-			{
-				try
-				{
-					Trace.WriteLine("Performing health checks...");
+            return base.OnStart();
+        }
 
-					// 1. Proveri MovieDiscussionService
-					bool movieOk = CheckService("http://localhost:59271");
-					Trace.WriteLine($"MovieDiscussionService status: {movieOk}");
+        private void ListenForRequests()
+        {
+            while (_running)
+            {
+                try
+                {
+                    var context = _listener.GetContext();
+                    ProcessRequest(context);
+                }
+                catch (Exception ex)
+                {
+                    Trace.WriteLine("HTTP Listener error: " + ex.Message);
+                }
+            }
+        }
 
-					// 2. Proveri NotificationService 
-					bool notificationOk = CheckService("http://localhost:59271"); // Promeni port ako treba
-					Trace.WriteLine($"NotificationService status: {notificationOk}");
+        private void ProcessRequest(HttpListenerContext context)
+        {
+            if (context.Request.HttpMethod == "GET" && context.Request.Url.AbsolutePath == "/health-monitoring")
+            {
+                var records = _service.GetLastTwoHours();
+                var json = System.Text.Json.JsonSerializer.Serialize(records);
 
-					// 3. Upisi u tabelu
-					var movieRecord = new HealthCheckRecord("MovieDiscussionService")
-					{
-						Status = movieOk ? "OK" : "NOT_OK",
-						CheckTime = DateTime.UtcNow
-					};
+                byte[] buffer = Encoding.UTF8.GetBytes(json);
+                context.Response.ContentType = "application/json";
+                context.Response.ContentLength64 = buffer.Length;
+                context.Response.OutputStream.Write(buffer, 0, buffer.Length);
+            }
+            else
+            {
+                context.Response.StatusCode = 404;
+            }
 
-					var notificationRecord = new HealthCheckRecord("NotificationService")
-					{
-						Status = notificationOk ? "OK" : "NOT_OK",
-						CheckTime = DateTime.UtcNow
-					};
+            context.Response.OutputStream.Close();
+        }
 
-					// Koristi async verziju ako imaš
-					_service.AddRecord(movieRecord);
-					_service.AddRecord(notificationRecord);
+        public override void Run()
+        {
+            Trace.WriteLine("HealthMonitoringWorker Run() method started.");
 
-					Trace.WriteLine("Health checks completed and written to table.");
-				}
-				catch (Exception ex)
-				{
-					Trace.WriteLine($"ERROR in Run method: {ex.Message}");
-					Trace.WriteLine($"Stack trace: {ex.StackTrace}");
-				}
+            while (_running)
+            {
+                try
+                {
+                    Trace.WriteLine("Performing health checks...");
 
-				// Čekaj 3 sekunde između provera
-				Thread.Sleep(3000);
-			}
-		}
-		private bool CheckService(string url)
-		{
-			try
-			{
-				Trace.WriteLine($"Checking service at: {url}");
+                    // 1. Proveri MovieDiscussionService putem HTTP
+                    bool movieOk = CheckService("http://localhost:59271"); // web role endpoint
+                    Trace.WriteLine($"MovieDiscussionService status: {movieOk}");
 
-				using (var client = new HttpClient())
-				{
-					client.Timeout = TimeSpan.FromSeconds(3);
-					var response = client.GetAsync(url).Result;
+                    // 2. Proveri NotificationService putem AdminNotificationQueue
+                    bool notificationOk = false;
+                    try
+                    {
+                        var msg = _adminQueue.GetMessage(); // sync metoda da ne komplikujemo Task
+                        if (msg != null)
+                        {
+                            string json = msg.AsString;
+                            var statusObj = Newtonsoft.Json.JsonConvert.DeserializeObject<NotificationStatus>(json);
 
-					Trace.WriteLine($"Service {url} responded with: {response.StatusCode}");
-					return response.IsSuccessStatusCode;
-				}
-			}
-			catch (Exception ex)
-			{
-				Trace.WriteLine($"Service {url} failed: {ex.Message}");
-				return false;
-			}
-		}
-	}
+                            // možeš dodati checksum ili timestamp proveru
+                            notificationOk = statusObj != null && statusObj.Service == "NotificationService";
+                            // Poruku izbriši jer smo je pročitali
+                            _adminQueue.DeleteMessage(msg);
+                        }
+                        else
+                        {
+                            notificationOk = false; // queue je prazan
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Trace.WriteLine($"Error reading admin queue: {ex.Message}");
+                        notificationOk = false;
+                    }
+
+                    Trace.WriteLine($"NotificationService status: {notificationOk}");
+
+                    // 3. Upisi u tabelu HealthCheck
+                    var movieRecord = new HealthCheckRecord("MovieDiscussionService")
+                    {
+                        Status = movieOk ? "OK" : "NOT_OK",
+                        CheckTime = DateTime.UtcNow
+                    };
+
+                    var notificationRecord = new HealthCheckRecord("NotificationService")
+                    {
+                        Status = notificationOk ? "OK" : "NOT_OK",
+                        CheckTime = DateTime.UtcNow
+                    };
+
+                    _service.AddRecord(movieRecord);
+                    _service.AddRecord(notificationRecord);
+
+                    Trace.WriteLine("Health checks completed and written to table.");
+                }
+                catch (Exception ex)
+                {
+                    Trace.WriteLine($"ERROR in Run method: {ex.Message}");
+                    Trace.WriteLine($"Stack trace: {ex.StackTrace}");
+                }
+
+                Thread.Sleep(3000);
+            }
+        }
+        private bool CheckService(string url)
+        {
+            try
+            {
+                Trace.WriteLine($"Checking service at: {url}");
+
+                using (var client = new HttpClient())
+                {
+                    client.Timeout = TimeSpan.FromSeconds(3);
+                    var response = client.GetAsync(url).Result;
+
+                    Trace.WriteLine($"Service {url} responded with: {response.StatusCode}");
+                    return response.IsSuccessStatusCode;
+                }
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine($"Service {url} failed: {ex.Message}");
+                return false;
+            }
+        }
+        private class NotificationStatus
+        {
+            public string Service { get; set; }
+            public string Status { get; set; }
+            public DateTime Timestamp { get; set; }
+        }
+
+    }
+
 }
