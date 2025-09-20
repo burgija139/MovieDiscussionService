@@ -8,6 +8,7 @@ using MovieDiscussionService_WebRole.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -332,13 +333,15 @@ namespace MovieDiscussionService_WebRole.Controllers
         // POST: /App/Comment/{id}
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Comment(string id, string text)
+        public async Task<ActionResult> Comment(string id, string text)
         {
-            if (!EnsureAuthenticated(out var user)) return RedirectToAction("Login", "Account");
-            var d = _discussionRepo.GetDiscussionById(id);
-            if (d == null) return HttpNotFound();
+            if (!EnsureAuthenticated(out var user))
+                return RedirectToAction("Login", "Account");
 
-            //var c = new Comment(id, Guid.NewGuid().ToString("N"))
+            var d = _discussionRepo.GetDiscussionById(id);
+            if (d == null)
+                return HttpNotFound();
+
             var c = new Comment(id)
             {
                 Text = text,
@@ -349,12 +352,14 @@ namespace MovieDiscussionService_WebRole.Controllers
 
             // ažuriraj meta podatke u diskusiji
             d.CommentCount += 1;
-            //d.LastCommentAuthor = user.RowKey;
-            //d.LastCommentAt = c.CreatedAt;
             _discussionRepo.UpdateDiscussion(d);
 
-            // obavesti pratioce preko Queue-a (obrađuje Worker Role NotificationService)
-            //NotifyFollowersAsync(id, d.Title, c);
+            // enqueue poruka u "notifications"
+            var queueClient = _storageAccount.CreateCloudQueueClient();
+            var queue = queueClient.GetQueueReference("notifications");
+            await queue.CreateIfNotExistsAsync();
+            await queue.AddMessageAsync(new CloudQueueMessage($"{c.PartitionKey}|{c.RowKey}"));
+
 
             TempData["Success"] = "Komentar je dodat.";
             return RedirectToAction("Details", new { id });
