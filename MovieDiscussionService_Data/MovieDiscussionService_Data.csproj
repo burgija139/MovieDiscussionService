@@ -107,6 +107,7 @@
     <Compile Include="Entities\Follow.cs" />
     <Compile Include="Entities\HealthCheckRecord.cs" />
     <Compile Include="Entities\Movie.cs" />
+    <Compile Include="Entities\NotificationLog.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Vote.cs" />
     <Compile Include="Interfaces\IAlertEmailRepository.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="Interfaces\IFollowRepository.cs" />
     <Compile Include="Interfaces\IHealthCheckRepository.cs" />
     <Compile Include="Interfaces\IMovieRepository.cs" />
+    <Compile Include="Interfaces\INotificationLogRepository.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Interfaces\IVoteRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,6 +126,7 @@
     <Compile Include="Repositories\FollowRepository.cs" />
     <Compile Include="Repositories\HealthCheckRepository.cs" />
     <Compile Include="Repositories\MovieRepository.cs" />
+    <Compile Include="Repositories\NotificationLogRepository.cs" />
     <Compile Include="Repositories\UserDataRepository.cs" />
     <Compile Include="Repositories\VoteRepository.cs" />
   </ItemGroup>

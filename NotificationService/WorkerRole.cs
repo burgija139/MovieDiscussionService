@@ -26,7 +26,7 @@ namespace NotificationService
 
         private CommentRepository _commentRepo;
         private FollowRepository _followRepo;
-        // private NotificationLogRepository _logRepo;
+        private NotificationLogRepository _logRepo;
 
         public override bool OnStart()
         {
@@ -41,7 +41,7 @@ namespace NotificationService
 
             _commentRepo = new CommentRepository(_storageAccount);
             _followRepo = new FollowRepository(_storageAccount);
-            //_logRepo = new NotificationLogRepository(_storageAccount);
+            _logRepo = new NotificationLogRepository(_storageAccount);
 
             return base.OnStart();
         }
@@ -108,16 +108,14 @@ namespace NotificationService
                         }
 
                         // 4) Upisi log
-                        /*var log = new NotificationLog
+                        var log = new NotificationLog
                         {
-                            RowKey = Guid.NewGuid().ToString("N"),
-                            PartitionKey = "Notification",
                             CommentId = commentId,
                             DateSent = DateTime.UtcNow,
                             SentCount = sentCount
                         };
                         _logRepo.Add(log);
-                        */
+                        
                         // 5) Obriši poruku
                         await _notificationsQueue.DeleteMessageAsync(qMessage);
 
@@ -162,19 +160,4 @@ namespace NotificationService
             }
         }
     }
-
-    // DTO za log
-    /*public class NotificationLog : Microsoft.WindowsAzure.Storage.Table.TableEntity
-    {
-        public string CommentId { get; set; }
-        public DateTime DateSent { get; set; }
-        public int SentCount { get; set; }
-    }
-
-    // Repozitorijum za log
-    public class NotificationLogRepository : TableRepository<NotificationLog>
-    {
-        public NotificationLogRepository(CloudStorageAccount account)
-            : base(account, "NotificationLog") { }
-    }*/
 }
