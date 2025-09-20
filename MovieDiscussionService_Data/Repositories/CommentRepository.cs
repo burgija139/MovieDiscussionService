@@ -28,6 +28,13 @@ namespace MovieDiscussionService_Data.Repositories
         }
 
         public void Add(Comment c) => _table.Execute(TableOperation.Insert(c));
+
+        public Comment GetById(string discussionId, string commentId)
+        {
+            var op = TableOperation.Retrieve<Comment>(discussionId, commentId);
+            var result = _table.Execute(op);
+            return result.Result as Comment;
+        }
     }
 
     
