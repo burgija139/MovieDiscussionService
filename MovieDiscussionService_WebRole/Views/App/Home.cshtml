@@ -180,7 +180,13 @@
                 {
                     <a class="btn" href="@Url.Action("New","App")">+ Nova diskusija</a>
                 }
-                <a class="btn" href="@Url.Action("Logout","Account")">Logout</a>
+
+                @if (user != null)
+                {
+                    <a class="btn" href="@Url.Action("EditProfile","Account")">Izmeni profil</a>
+                    <a class="btn" href="@Url.Action("Logout","Account")">Logout</a>
+                }
+
             </div>
         </div>
 

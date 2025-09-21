@@ -5,10 +5,6 @@
       {
         "Path": "MovieDiscussionService\\MovieDiscussionService.ccproj",
         "Action": "Start"
-      },
-      {
-        "Path": "HealthStatusService_WebRole\\HealthStatusService_WebRole.csproj",
-        "Action": "StartWithoutDebugging"
       }
     ]
   }

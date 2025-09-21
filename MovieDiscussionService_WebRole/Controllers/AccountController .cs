@@ -1,10 +1,12 @@
-﻿using System.Web.Mvc;
-using MovieDiscussionService_Data.Repositories;
-using MovieDiscussionService_Data;
-using Microsoft.Azure;
+﻿using Microsoft.Azure;
 using Microsoft.WindowsAzure.Storage;
-using System.Web.Helpers;
+using Microsoft.WindowsAzure.Storage.Blob;
+using MovieDiscussionService_Data;
+using MovieDiscussionService_Data.Repositories;
+using System.Linq;
 using System.Web;
+using System.Web.Helpers;
+using System.Web.Mvc;
 
 
 namespace MovieDiscussionService.Controllers
@@ -25,8 +27,22 @@ namespace MovieDiscussionService.Controllers
 			return View("Register");
 		}
 
-		// GET: /Account/Logout
-		public ActionResult Logout()
+        [HttpGet]
+        public ActionResult EditProfile()
+        {
+            var email = Session["UserEmail"] as string;
+            if (string.IsNullOrEmpty(email))
+                return RedirectToAction("Login");
+
+            var user = _userRepo.GetUserByEmail(email);
+            if (user == null)
+                return RedirectToAction("Login");
+
+            return View("EditProfile", user);
+        }
+
+        // GET: /Account/Logout
+        public ActionResult Logout()
 		{
 			Session.Clear();
 			return RedirectToAction("Login");
@@ -117,5 +133,106 @@ namespace MovieDiscussionService.Controllers
 
 			return RedirectToAction("Login");
 		}
-	}
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditProfile(
+            string Name,
+            string Lastname,
+            string Gender,
+            string Country,
+            string City,
+            string Address,
+            string CurrentPassword,
+            string NewPassword,
+            string ConfirmNewPassword,
+            HttpPostedFileBase profileImage
+        )
+        {
+            var email = Session["UserEmail"] as string;
+            if (string.IsNullOrEmpty(email))
+                return RedirectToAction("Login");
+
+            var user = _userRepo.GetUserByEmail(email);
+            if (user == null)
+                return RedirectToAction("Login");
+
+            // 1) Ako se menja lozinka — validacije
+            if (!string.IsNullOrWhiteSpace(NewPassword) || !string.IsNullOrWhiteSpace(ConfirmNewPassword))
+            {
+                if (string.IsNullOrWhiteSpace(CurrentPassword))
+                {
+                    TempData["Error"] = "Unesite trenutnu lozinku kako biste postavili novu.";
+                    return View("EditAccount", user);
+                }
+                // verifikuj trenutnu
+                if (!Crypto.VerifyHashedPassword(user.PasswordHash, CurrentPassword))
+                {
+                    TempData["Error"] = "Trenutna lozinka nije ispravna.";
+                    return View("EditAccount", user);
+                }
+                if (NewPassword != ConfirmNewPassword)
+                {
+                    TempData["Error"] = "Nova lozinka i potvrda se ne poklapaju.";
+                    return View("EditAccount", user);
+                }
+
+                user.PasswordHash = Crypto.HashPassword(NewPassword);
+            }
+
+            // 2) Upload nove profil slike (opciono)
+            if (profileImage != null && profileImage.ContentLength > 0)
+            {
+                var newUrl = UploadUserImage(profileImage, email);
+                if (!string.IsNullOrEmpty(newUrl))
+                {
+                    user.ImageUrl = newUrl;
+                }
+            }
+
+            // 3) Ažuriraj ostala polja (osim email-a)
+            user.Name = Name;
+            user.Lastname = Lastname;
+            user.Gender = Gender;
+            user.Country = Country;
+            user.City = City;
+            user.Address = Address;
+
+            // 4) Sačuvaj
+            _userRepo.UpdateUser(user);
+
+            TempData["Success"] = "Profil uspešno ažuriran.";
+            return RedirectToAction("EditProfile");
+        }
+
+        private string UploadUserImage(HttpPostedFileBase file, string email)
+        {
+            if (file == null || file.ContentLength == 0) return null;
+
+            var storageAccount = CloudStorageAccount.Parse(
+                CloudConfigurationManager.GetSetting("DataConnectionString"));
+            var blobClient = storageAccount.CreateCloudBlobClient();
+            var container = blobClient.GetContainerReference("userimages");
+            container.CreateIfNotExists();
+            container.SetPermissions(new BlobContainerPermissions
+            {
+                PublicAccess = BlobContainerPublicAccessType.Blob
+            });
+
+            // Jedinstveno ime (email + ticks + ekstenzija)
+            var ext = System.IO.Path.GetExtension(file.FileName);
+            if (string.IsNullOrEmpty(ext)) ext = ".jpg";
+            string safeEmail = string.Concat(email.Where(ch => char.IsLetterOrDigit(ch) || ch == '-' || ch == '_'));
+            string blobName = $"user_{safeEmail}_{System.DateTime.UtcNow.Ticks}{ext}";
+
+            var blockBlob = container.GetBlockBlobReference(blobName);
+            blockBlob.Properties.ContentType = file.ContentType ?? "image/jpeg";
+            using (var stream = file.InputStream)
+            {
+                blockBlob.UploadFromStream(stream);
+            }
+            return blockBlob.Uri.ToString();
+        }
+
+    }
 }

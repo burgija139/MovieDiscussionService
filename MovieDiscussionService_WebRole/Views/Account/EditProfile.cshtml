@@ -1,0 +1,209 @@
+﻿@model MovieDiscussionService_Data.User
+@{
+    ViewBag.Title = "Izmeni profil";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Izmeni Profil - MovieDiscussion</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f2023, #252a31, #2c3e50);
+            color: #f1f1f1;
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(0,0,0,0.6);
+            padding: 24px 28px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin: 0 0 16px 0;
+            color: #f5c518;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .grid-full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-size: 12px;
+            color: #ddd;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #f1f1f1;
+            color: #333;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            background: #f5c518;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            .btn:hover {
+                background: #e4b912;
+            }
+
+        a {
+            color: #f5c518;
+            text-decoration: none;
+        }
+
+        .muted {
+            color: #bbb;
+            font-size: 12px;
+        }
+
+        .row {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+            background: #333;
+        }
+
+        .alert {
+            margin: 10px 0;
+            color: #ffb3b3;
+        }
+
+        .ok {
+            margin: 10px 0;
+            color: #c9ffb3;
+        }
+
+        input[type="file"] {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Izmeni Profil</h1>
+
+        @if (TempData["Error"] != null)
+        {<div class="alert">@TempData["Error"]</div>}
+        @if (TempData["Success"] != null)
+        {<div class="ok">@TempData["Success"]</div>}
+
+        @using (Html.BeginForm("EditProfile", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row">
+                <div>
+                    <img class="avatar" src="@Model.ImageUrl" alt="avatar" onerror="this.style.display='none';" />
+                </div>
+                <div style="flex:1;">
+                    <label>Nova profil slika (opciono)</label>
+                    <input type="file" name="profileImage" accept="image/*" />
+                    <div class="muted">Ako ne uploaduješ novu sliku, ostaje postojeća.</div>
+                </div>
+            </div>
+
+            <div class="grid" style="margin-top:14px;">
+                <div>
+                    <label>Email (ne možete menjati)</label>
+                    <input type="email" value="@Model.RowKey" disabled />
+                </div>
+                <div>
+                    <label>Ime</label>
+                    <input type="text" name="Name" value="@Model.Name" required />
+                </div>
+                <div>
+                    <label>Prezime</label>
+                    <input type="text" name="Lastname" value="@Model.Lastname" required />
+                </div>
+                <div>
+                    <label>Pol</label>
+                    <select name="Gender">
+                        <option value="">-- odaberi --</option>
+                        <option value="Male" @(Model.Gender == "Male" ? "selected" : "")>Muški</option>
+                        <option value="Female" @(Model.Gender == "Female" ? "selected" : "")>Ženski</option>
+                        <option value="Other" @(Model.Gender == "Other" ? "selected" : "")>Drugo</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Država</label>
+                    <input type="text" name="Country" value="@Model.Country" />
+                </div>
+                <div>
+                    <label>Grad</label>
+                    <input type="text" name="City" value="@Model.City" />
+                </div>
+                <div class="grid-full">
+                    <label>Adresa</label>
+                    <input type="text" name="Address" value="@Model.Address" />
+                </div>
+            </div>
+
+            <div class="grid" style="margin-top:18px;">
+                <div class="grid-full">
+                    <h3 style="margin:0 0 8px 0; color:#f5c518;">Promena lozinke (opciono)</h3>
+                    <div class="muted">Unesi trenutnu lozinku da bi postavio novu.</div>
+                </div>
+                <div>
+                    <label>Trenutna lozinka</label>
+                    <input type="password" name="CurrentPassword" />
+                </div>
+                <div>
+                    <label>Nova lozinka</label>
+                    <input type="password" name="NewPassword" />
+                </div>
+                <div>
+                    <label>Potvrdi novu lozinku</label>
+                    <input type="password" name="ConfirmNewPassword" />
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn">Sačuvaj izmene</button>
+                <a class="btn" href="@Url.Action("Index","App")">Nazad</a>
+            </div>
+        }
+    </div>
+</body>
+</html>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HealthStatusService_WebRole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69c20816cfef437ff8ac64a90bd998ef1193aa20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+686c80133c971592208e40c3b9a184ce17f6ae29")]
 [assembly: System.Reflection.AssemblyProductAttribute("HealthStatusService_WebRole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HealthStatusService_WebRole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

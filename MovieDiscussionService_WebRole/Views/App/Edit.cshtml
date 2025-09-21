@@ -39,7 +39,7 @@
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 14px;
+            gap: 30px;
         }
 
         .grid-full {
@@ -115,7 +115,7 @@
 
                 <div class="grid-full">
                     <label>Sinopsis</label>
-                    <textarea name="Synopsis" required>@m?.Synopsis</textarea>
+                    <textarea name="Synopsis" required>@m.Synopsis</textarea>
                 </div>
 
                 <div>
@@ -124,7 +124,7 @@
                 </div>
                 <div>
                     <label>Žanr</label>
-                    <input type="text" name="Genre" value="@m?.Genre" required />
+                    <input type="text" name="Genre" value="@m.Genre" required />
                 </div>
                 <div>
                     <label>Godina izlaska</label>
@@ -132,11 +132,11 @@
                 </div>
                 <div>
                     <label>Trajanje</label>
-                    <input type="text" name="Duration" value="@m?.Duration" required />
+                    <input type="text" name="Duration" value="@m.Duration" required />
                 </div>
                 <div class="grid-full">
                     <label>Naslovna slika (URL)</label>
-                    <input type="url" name="PosterUrl" value="@m?.PosterUrl" />
+                    <input type="url" name="PosterUrl" value="@m.PosterUrl" />
                 </div>
             </div>
 
