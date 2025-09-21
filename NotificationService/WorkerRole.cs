@@ -119,7 +119,7 @@ namespace NotificationService
                             SentCount = sentCount
                         };
                         _logRepo.Add(log);
-                        
+
                         // 5) Obriši poruku
                         await _notificationsQueue.DeleteMessageAsync(qMessage);
 
@@ -127,7 +127,7 @@ namespace NotificationService
                     }
                     else
                     {
-                        await Task.Delay(TimeSpan.FromSeconds(1), token);
+                        await Task.Delay(TimeSpan.FromSeconds(2), token);
                     }
                 }
                 catch (Exception ex)
@@ -142,6 +142,22 @@ namespace NotificationService
                     Timestamp = DateTime.UtcNow
                 };
                 string json = JsonConvert.SerializeObject(status);
+
+                // Osveži svoj red
+                await _adminQueue.FetchAttributesAsync();
+
+                int? approximateMessageCount = _adminQueue.ApproximateMessageCount;
+                if (approximateMessageCount.HasValue && approximateMessageCount.Value >= 5)
+                {
+                    // Preuzmi najstariju poruku
+                    CloudQueueMessage oldestMessage = await _adminQueue.GetMessageAsync();
+                    if (oldestMessage != null)
+                    {
+                        await _adminQueue.DeleteMessageAsync(oldestMessage);
+                    }
+                }
+
+                // Dodaj novu poruku
                 await _adminQueue.AddMessageAsync(new CloudQueueMessage(json));
             }
         }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.WindowsAzure.ServiceRuntime;
+using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
 using MovieDiscussionService_Contracts.Contracts;
@@ -6,25 +7,30 @@ using MovieDiscussionService_Data.Entities;
 using MovieDiscussionService_Data.Repositories;
 using MovieDiscussionService_HealthMonitoringService.Proxies;
 using Newtonsoft.Json;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Mail;
 using System.Text;
 using System.Text.Json;
 using System.Threading;
-using Microsoft.WindowsAzure.ServiceRuntime;
+using System.Threading.Tasks;
 
 namespace MovieDiscussionService_HealthMonitoringService
 {
     public class HealthMonitoringWorker : RoleEntryPoint
     {
+        private readonly ManualResetEvent _runCompleteEvent = new ManualResetEvent(false);
+        private readonly CancellationTokenSource _cts = new CancellationTokenSource();
         private bool _running = true;
         private HealthMonitoringServiceProvider _service;
         // Dodaj u HealthMonitoringWorker klasu
-
         private CloudStorageAccount _storageAccount;
         private CloudQueue _adminQueue;
 
@@ -56,6 +62,26 @@ namespace MovieDiscussionService_HealthMonitoringService
             _service = new HealthMonitoringServiceProvider(connectionString);
 
             return base.OnStart();
+        }
+        public override void Run()
+        {
+            Trace.TraceInformation("NotificationService Run starting");
+            try
+            {
+                RunAsync(_cts.Token).Wait();
+            }
+            finally
+            {
+                _runCompleteEvent.Set();
+            }
+        }
+
+        public override void OnStop()
+        {
+            Trace.TraceInformation("NotificationService OnStop");
+            _cts.Cancel();
+            _runCompleteEvent.WaitOne();
+            base.OnStop();
         }
 
         private void ListenForRequests()
@@ -94,75 +120,65 @@ namespace MovieDiscussionService_HealthMonitoringService
             context.Response.OutputStream.Close();
         }
 
-        public override void Run()
+        private async Task RunAsync(CancellationToken token)
         {
-            Trace.WriteLine("HealthMonitoringWorker Run() method started.");
-
-            while (_running)
+            while (!token.IsCancellationRequested)
             {
                 try
                 {
                     Trace.WriteLine("Performing health checks...");
 
-                    // 1. Proveri MovieDiscussionService putem HTTP
-                    bool movieOk = CheckService("http://localhost:59271"); // web role endpoint
+                    bool movieOk = CheckService("http://localhost:59271");
                     Trace.WriteLine($"MovieDiscussionService status: {movieOk}");
 
-                    // 2. Proveri NotificationService putem AdminNotificationQueue
                     bool notificationOk = false;
                     try
                     {
-                        var msg = _adminQueue.GetMessage(); // sync metoda da ne komplikujemo Task
+                        var msg = await _adminQueue.GetMessageAsync();
                         if (msg != null)
                         {
                             string json = msg.AsString;
-                            var statusObj = Newtonsoft.Json.JsonConvert.DeserializeObject<NotificationStatus>(json);
-
-                            // možeš dodati checksum ili timestamp proveru
+                            var statusObj = JsonConvert.DeserializeObject<NotificationStatus>(json);
                             notificationOk = statusObj != null && statusObj.Service == "NotificationService";
-                            // Poruku izbriši jer smo je pročitali
-                            _adminQueue.DeleteMessage(msg);
-                        }
-                        else
-                        {
-                            notificationOk = false; // queue je prazan
+                            await _adminQueue.DeleteMessageAsync(msg);
                         }
                     }
                     catch (Exception ex)
                     {
                         Trace.WriteLine($"Error reading admin queue: {ex.Message}");
-                        notificationOk = false;
                     }
 
                     Trace.WriteLine($"NotificationService status: {notificationOk}");
 
-                    // 3. Upisi u tabelu HealthCheck
-                    var movieRecord = new HealthCheckRecord("MovieDiscussionService")
+                    _service.AddRecord(new HealthCheckRecord("MovieDiscussionService")
                     {
                         Status = movieOk ? "OK" : "NOT_OK",
                         CheckTime = DateTime.UtcNow
-                    };
+                    });
 
-                    var notificationRecord = new HealthCheckRecord("NotificationService")
+                    _service.AddRecord(new HealthCheckRecord("NotificationService")
                     {
                         Status = notificationOk ? "OK" : "NOT_OK",
                         CheckTime = DateTime.UtcNow
-                    };
+                    });
 
-                    _service.AddRecord(movieRecord);
-                    _service.AddRecord(notificationRecord);
-
-                    Trace.WriteLine("Health checks completed and written to table.");
+                    if (!movieOk || !notificationOk)
+                    {
+                        foreach (var email in _service.GetAlertEmails())
+                        {
+                            await SendAlertEmail(email, movieOk, notificationOk);
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {
-                    Trace.WriteLine($"ERROR in Run method: {ex.Message}");
-                    Trace.WriteLine($"Stack trace: {ex.StackTrace}");
+                    Trace.WriteLine($"ERROR in RunAsync: {ex}");
                 }
 
-                Thread.Sleep(3000);
+                await Task.Delay(3000, token);
             }
         }
+
         private bool CheckService(string url)
         {
             try
@@ -184,6 +200,36 @@ namespace MovieDiscussionService_HealthMonitoringService
                 return false;
             }
         }
+        private async Task SendAlertEmail(string toEmail, bool movieOk, bool notificationOk)
+        {
+            try
+            {
+                System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
+
+                var apiKey = ConfigurationManager.AppSettings["SendGridApiKey"];
+                var client = new SendGridClient(apiKey);
+
+                var from = new EmailAddress("dusanloncar14@gmail.com", "Health Monitor");
+                var subject = "⚠️ Service Health Alert";
+
+                var plainTextContent = $"MovieDiscussionService: {(movieOk ? "OK" : "NOT_OK")}\n" +
+                                       $"NotificationService: {(notificationOk ? "OK" : "NOT_OK")}";
+                var htmlContent = $"<h3>Service Health Alert</h3>" +
+                                  $"<p><b>MovieDiscussionService:</b> {(movieOk ? "✅ OK" : "❌ NOT_OK")}</p>" +
+                                  $"<p><b>NotificationService:</b> {(notificationOk ? "✅ OK" : "❌ NOT_OK")}</p>";
+
+                var msg = MailHelper.CreateSingleEmail(from, new EmailAddress(toEmail), subject, plainTextContent, htmlContent);
+                var response = await client.SendEmailAsync(msg);
+
+                Trace.TraceInformation($"Alert email sent to {toEmail}, SendGrid status={response.StatusCode}");
+            }
+            catch (Exception ex)
+            {
+                Trace.TraceError($"Error sending alert email to {toEmail}: {ex}");
+            }
+        }
+
+
         private class NotificationStatus
         {
             public string Service { get; set; }

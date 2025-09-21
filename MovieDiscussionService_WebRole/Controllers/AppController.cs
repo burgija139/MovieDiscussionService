@@ -64,26 +64,81 @@ namespace MovieDiscussionService_WebRole.Controllers
 
         // GET: /App/Index?page=1&pageSize=10
         // Lista svih diskusija sa paginacijom
-        public ActionResult Index(int page = 1, int pageSize = 10)
+        public ActionResult Index(int page = 1, int pageSize = 10, string title = null, string genre = null, string sort = "new")
         {
             var user = CurrentUserOrNull();
             ViewBag.User = user;
 
             var all = _discussionRepo
                 .RetrieveAllDiscussions()
-                .AsEnumerable()
-                .OrderByDescending(d => d.CreatedAt)
-                .ToList(); // Table LINQ skip/take nije uvek server-side; odradimo u memoriji
+                .AsEnumerable();
+            //.OrderByDescending(d => d.CreatedAt)
+            //.ToList(); // Table LINQ skip/take nije uvek server-side; odradimo u memoriji
 
-            int total = all.Count;
-            var items = all.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+            // 2) Mapa filmova: Title -> Genre (i opcionalno još podataka ako zatreba)
+            //    (Radi efikasnosti na većem datasetu možeš keširati; za sada direktno)
+            var movies = _movieRepo.RetrieveAllMovies().ToList();
+            var genreMap = movies.ToDictionary(
+                m => m.Title,
+                m => m.Genre ?? string.Empty,
+                StringComparer.OrdinalIgnoreCase
+            );
 
+            // 3) Filtriranje
+            if (!string.IsNullOrWhiteSpace(title))
+            {
+                all = all.Where(d =>
+                    !string.IsNullOrEmpty(d.MovieTitle) &&
+                    d.MovieTitle.IndexOf(title, StringComparison.OrdinalIgnoreCase) >= 0
+                );
+            }
+
+            if (!string.IsNullOrWhiteSpace(genre))
+            {
+                all = all.Where(d =>
+                {
+                    string g;
+                    return genreMap.TryGetValue(d.MovieTitle ?? string.Empty, out g) &&
+                           g.IndexOf(genre, StringComparison.OrdinalIgnoreCase) >= 0;
+                });
+            }
+
+            // 4) Sortiranje
+            switch ((sort ?? "new").ToLowerInvariant())
+            {
+                case "pos_desc":
+                    all = all.OrderByDescending(d => d.PositiveCount).ThenByDescending(d => d.CreatedAt);
+                    break;
+                case "pos_asc":
+                    all = all.OrderBy(d => d.PositiveCount).ThenByDescending(d => d.CreatedAt);
+                    break;
+                case "neg_desc":
+                    all = all.OrderByDescending(d => d.NegativeCount).ThenByDescending(d => d.CreatedAt);
+                    break;
+                case "neg_asc":
+                    all = all.OrderBy(d => d.NegativeCount).ThenByDescending(d => d.CreatedAt);
+                    break;
+                default: // "new"
+                    all = all.OrderByDescending(d => d.CreatedAt);
+                    break;
+            }
+
+            // 5) Paginacija
+            var list = all.ToList();
+            int total = list.Count;
+            var items = list.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+
+            // 6) ViewBag za UI
             ViewBag.Page = page;
             ViewBag.PageSize = pageSize;
             ViewBag.Total = total;
             ViewBag.TotalPages = (int)Math.Ceiling(total / (double)pageSize);
 
-            return View("Home", items); // Home.cshtml će prikazati listu
+            ViewBag.TitleFilter = title;
+            ViewBag.GenreFilter = genre;
+            ViewBag.Sort = sort;
+
+            return View("Home", items);
         }
 
         // GET: /App/Details/{id}

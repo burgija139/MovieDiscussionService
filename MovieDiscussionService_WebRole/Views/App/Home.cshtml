@@ -166,6 +166,38 @@
         a {
             color: #f5c518;
         }
+
+        /* Container za formu */
+        .searchbar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            background: rgba(0,0,0,0.45);
+            border: 1px solid rgba(255,255,255,0.06);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        /* Inputs/Select osnovni izgled */
+        .search-input,
+        .search-select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding: 10px;
+            border: none;
+            border-radius: var(--radius);
+            background: #f1f1f1;
+            color: #333;
+            line-height: 1.1;
+            outline: none;
+            min-width: 140px;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -176,6 +208,7 @@
                 <div class="pill">Page @page of @totalPages</div>
             </div>
             <div class="actions">
+
                 @if (user != null && user.IsVerified)
                 {
                     <a class="btn" href="@Url.Action("New","App")">+ Nova diskusija</a>
@@ -189,11 +222,55 @@
 
             </div>
         </div>
+        
+
+        <div class="action">
+            @* SEARCH + SORT *@
+            <form method="get" action="@Url.Action("Index","App")" style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                <input type="text" name="title" placeholder="Naziv filma"
+                       value="@(ViewBag.TitleFilter ?? "")"
+                       style="padding:8px; border:none; border-radius:6px; background:#f1f1f1; color:#333; width:160px;" />
+
+                <input type="text" name="genre" placeholder="Žanr"
+                       value="@(ViewBag.GenreFilter ?? "")"
+                       style="padding:8px; border:none; border-radius:6px; background:#f1f1f1; color:#333; width:140px;" />
+
+                <select name="sort" style="padding:8px; border:none; border-radius:6px; background:#f1f1f1; color:#333;">
+                    @{
+                        string sort = ViewBag.Sort ?? "new";
+                        Func<string, string> sel = key => key.Equals(sort, StringComparison.OrdinalIgnoreCase) ? "selected" : "";
+                    }
+                    <option value="new" @sel("new")>Najnovije</option>
+                    <option value="pos_desc" @sel("pos_desc")>👍 Najviše pozitivnih</option>
+                    <option value="pos_asc" @sel("pos_asc")>👍 Najmanje pozitivnih</option>
+                    <option value="neg_desc" @sel("neg_desc")>👎 Najviše negativnih</option>
+                    <option value="neg_asc" @sel("neg_asc")>👎 Najmanje negativnih</option>
+                </select>
+
+                <input type="hidden" name="pageSize" value="@pageSize" />
+                <button type="submit" class="btn">Primeni</button>
+
+                @if (!string.IsNullOrWhiteSpace(ViewBag.TitleFilter as string) || !string.IsNullOrWhiteSpace(ViewBag.GenreFilter as string) || !string.IsNullOrWhiteSpace(ViewBag.Sort as string))
+                {
+                    <a class="btn" href="@Url.Action("Index","App")">Reset</a>
+                }
+            </form>
+        </div>
 
         @if (TempData["Error"] != null)
         {<div class="alert">@TempData["Error"]</div>}
         @if (TempData["Success"] != null)
         {<div class="alert" style="color:#c9ffb3;">@TempData["Success"]</div>}
+
+        @if (!string.IsNullOrWhiteSpace(ViewBag.TitleFilter as string) || !string.IsNullOrWhiteSpace(ViewBag.GenreFilter as string))
+        {
+            <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap;">
+                @if (!string.IsNullOrWhiteSpace(ViewBag.TitleFilter as string))
+                {<span class="pill">Film: @ViewBag.TitleFilter</span>}
+                @if (!string.IsNullOrWhiteSpace(ViewBag.GenreFilter as string))
+                {<span class="pill">Žanr: @ViewBag.GenreFilter</span>}
+            </div>
+        }
 
         <div class="grid">
             @foreach (var d in Model)
@@ -219,18 +296,31 @@
             @{
                 int start = Math.Max(1, page - 2);
                 int end = Math.Min(totalPages, page + 2);
+                string curTitle = ViewBag.TitleFilter ?? "";
+                string curGenre = ViewBag.GenreFilter ?? "";
+                string curSort = ViewBag.Sort ?? "new";
+
+                Func<int, string> pageUrl = i => Url.Action("Index", "App", new
+                {
+                    page = i,
+                    pageSize = pageSize,
+                    title = curTitle,
+                    genre = curGenre,
+                    sort = curSort
+                });
+
                 if (page > 1)
                 {
-                    <a class="page-link" href="@Url.Action("Index","App", new { page = page - 1, pageSize = pageSize })">«</a>
+                    <a class="page-link" href="@pageUrl(page - 1)">«</a>
                 }
                 for (int i = start; i <= end; i++)
                 {
                     var cls = i == page ? "page-link active" : "page-link";
-                    <a class="@cls" href="@Url.Action("Index","App", new { page = i, pageSize = pageSize })">@i</a>
+                    <a class="@cls" href="@pageUrl(i)">@i</a>
                 }
                 if (page < totalPages)
                 {
-                    <a class="page-link" href="@Url.Action("Index","App", new { page = page + 1, pageSize = pageSize })">»</a>
+                    <a class="page-link" href="@pageUrl(page + 1)">»</a>
                 }
             }
         </div>
