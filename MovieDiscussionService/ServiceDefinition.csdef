@@ -23,12 +23,27 @@
   <WorkerRole name="WorkerRoleService" vmsize="Standard_D1_v2">
     <ConfigurationSettings />
   </WorkerRole>
-	<WorkerRole name="HealthMonitoringService" vmsize="Standard_D1_v2">
-		<Endpoints>
-			<InputEndpoint name="HttpIn" protocol="http" port="50002" />
-		</Endpoints>
-		<ConfigurationSettings>
-			<Setting name="DataConnectionString" />
-		</ConfigurationSettings>
-	</WorkerRole>
+  <WorkerRole name="HealthMonitoringService" vmsize="Standard_D1_v2">
+    <Endpoints>
+      <InputEndpoint name="HttpIn" protocol="http" port="50002" />
+    </Endpoints>
+    <ConfigurationSettings>
+      <Setting name="DataConnectionString" />
+    </ConfigurationSettings>
+  </WorkerRole>
+  <WebRole name="HealthStatusService_WebRole" vmsize="Standard_D1_v2">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+	  <ConfigurationSettings>
+		  <Setting name="DataConnectionString" />
+	  </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="8080" />
+    </Endpoints>
+  </WebRole>
 </ServiceDefinition>

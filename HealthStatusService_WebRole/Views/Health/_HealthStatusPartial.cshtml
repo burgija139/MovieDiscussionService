@@ -1,11 +1,11 @@
-﻿@model List<HealthStatusService_WebRole.Models.HealthRecord>
+﻿@model List<MovieDiscussionService_Data.Entities.HealthCheckRecord>
 
 @if (Model == null || !Model.Any())
 {
     <div class="alert alert-warning">
         No health data available. Please check if HealthMonitoringService is running.
     </div>
-}
+}   
 else
 {
     var serviceGroups = Model.GroupBy(r => r.ServiceName);

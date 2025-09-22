@@ -1,9 +1,14 @@
-﻿namespace HealthStatusService_WebRole.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace HealthStatusService_WebRole.Models
 {
-	public class HealthRecord
-	{
-		public string ServiceName { get; set; }
-		public string Status { get; set; }
-		public DateTime CheckTime { get; set; }
-	}
+    public class HealthRecord
+    {
+        public string ServiceName { get; set; }
+        public string Status { get; set; }
+        public DateTime CheckTime { get; set; }
+    }
 }

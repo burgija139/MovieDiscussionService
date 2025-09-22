@@ -1,22 +1,159 @@
-﻿@model List<HealthStatusService_WebRole.Models.HealthRecord>
+﻿@model List<MovieDiscussionService_Data.Entities.HealthCheckRecord>
 
-<h2>Service Health Status <small>(Auto-refreshing every 3 seconds)</small></h2>
+@{
+    Layout = null; // ili koristi zajednički layout ako želiš
+}
 
-<div id="health-data">
-    @await Html.PartialAsync("_HealthStatusPartial", Model)
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Service Health Status</title>
+    <style>
+        :root{
+          --brand:#f5c518;
+          --bg-1:#1f2023;
+          --bg-2:#252a31;
+          --panel:rgba(0,0,0,0.55);
+          --border:rgba(255,255,255,0.08);
+          --text:#f1f1f1;
+          --muted:#bbb;
+          --ok:#1fbf75;
+          --bad:#e35d5d;
+          --shadow:0 8px 20px rgba(0,0,0,.35);
+          --radius:10px;
+        }
 
-@section Scripts {
+        html, body{
+          margin:0;
+          padding:0;
+          min-height:100%;
+          font-family:'Segoe UI',sans-serif;
+          background:linear-gradient(135deg,var(--bg-1),var(--bg-2),#2c3e50);
+          color:var(--text);
+        }
+
+        .wrap{
+          max-width:1100px;
+          margin:24px auto;
+          padding:0 16px;
+        }
+
+        h2{
+          color:var(--brand);
+          margin:12px 0 16px 0;
+          font-weight:700;
+        }
+        h2 small{ color:#ddd; font-weight:400; font-size:.7em; }
+
+        .alert.alert-warning{
+          background:rgba(255,193,7,0.12);
+          border:1px solid rgba(255,193,7,0.35);
+          color:#ffd666;
+          padding:12px 14px;
+          border-radius:var(--radius);
+          box-shadow:var(--shadow);
+          margin:20px 0;
+        }
+
+        .service-panel{
+          background:var(--panel);
+          border:1px solid var(--border);
+          border-radius:var(--radius);
+          padding:16px;
+          margin:16px 0;
+          box-shadow:var(--shadow);
+          backdrop-filter:blur(4px);
+        }
+
+        .service-panel h3{
+          margin:0 0 10px 0;
+          color:var(--brand);
+          font-weight:700;
+        }
+
+        .availability{
+          font-size:14px;
+          color:var(--muted);
+          margin-bottom:10px;
+        }
+        .availability .percentage{
+          color:var(--text);
+          font-weight:700;
+          background:#222;
+          padding:4px 8px;
+          border-radius:999px;
+          margin-left:4px;
+        }
+
+        .table{
+          width:100%;
+          border-collapse:collapse;
+          background:rgba(255,255,255,0.03);
+          border-radius:8px;
+          overflow:hidden;
+          border:1px solid var(--border);
+        }
+
+        .table thead th{
+          text-align:left;
+          font-weight:600;
+          font-size:13px;
+          letter-spacing:.3px;
+          color:#ddd;
+          background:rgba(255,255,255,0.04);
+          padding:10px 12px;
+          border-bottom:1px solid var(--border);
+        }
+
+        .table tbody td{
+          padding:10px 12px;
+          border-bottom:1px solid var(--border);
+          color:var(--text);
+          font-size:14px;
+        }
+
+        .table tbody tr:last-child td{ border-bottom:none; }
+
+        .table-success{ background:rgba(31,191,117,0.08); }
+        .table-danger{ background:rgba(227,93,93,0.10); }
+
+        .table tbody tr:hover{ background:rgba(255,255,255,0.06); }
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2>Service Health Status <small>(Auto-refreshing every 10 seconds)</small></h2>
+
+        <div id="health-data">
+            @* inicijalni render partiala *@
+            @Html.Partial("_HealthStatusPartial", Model)
+        </div>
+    </div>
+
     <script>
         function refreshHealthData() {
-            fetch('@Url.Action("HealthStatusPartial", "Health")')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('health-data').innerHTML = data;
+            fetch('@Url.Action("HealthStatusPartial", "Health")', { cache: 'no-store' })
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.text();
+                })
+                .then(html => {
+                    const el = document.getElementById('health-data');
+                    if (el) el.innerHTML = html;
+                })
+                .catch(err => {
+                    // tihi fallback – ne prekidamo prikaz
+                    console.warn('Refresh failed:', err);
                 });
         }
 
+        // automatsko osvežavanje na 10s + prvi refresh malo kasnije
         setInterval(refreshHealthData, 10000);
-        refreshHealthData();
+        // opciono: prvi refresh posle 2s (da uhvati nove podatke odmah po loadu)
+        setTimeout(refreshHealthData, 2000);
     </script>
-}
+</body>
+</html>

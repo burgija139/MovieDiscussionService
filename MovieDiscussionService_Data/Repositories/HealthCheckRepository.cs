@@ -16,9 +16,9 @@ namespace MovieDiscussionService_Data.Repositories
 
 		public HealthCheckRepository(string connectionString)
 		{
-			var account = CloudStorageAccount.Parse(connectionString);
-			var client = account.CreateCloudTableClient();
-			_table = client.GetTableReference("HealthCheck");
+            var account = CloudStorageAccount.Parse(connectionString);
+            var client = account.CreateCloudTableClient();
+            _table = client.GetTableReference("HealthCheck");
 			_table.CreateIfNotExistsAsync().Wait();
 		}
 
