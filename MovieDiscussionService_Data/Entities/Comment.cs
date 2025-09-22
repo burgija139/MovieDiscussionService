@@ -16,9 +16,9 @@ namespace MovieDiscussionService_Data.Entities
         public Comment(string discussionId)
         {
             PartitionKey = discussionId; // grupisanje komentara po diskusiji
-            RowKey = Guid.NewGuid().ToString();          // npr. GUID ili timestamp
+            RowKey = Guid.NewGuid().ToString();          
         }
 
-        public Comment() { } // default za Table Storage
+        public Comment() { } 
     }
 }

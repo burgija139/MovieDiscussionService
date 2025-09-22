@@ -21,7 +21,7 @@ namespace MovieDiscussionService_Data.Entities
 			CheckTime = DateTime.UtcNow;
 		}
 
-		public HealthCheckRecord() { } // obavezno za deserializaciju
+		public HealthCheckRecord() { }
 	}
 }
 

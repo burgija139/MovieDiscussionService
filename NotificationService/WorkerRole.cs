@@ -33,6 +33,8 @@ namespace NotificationService
         {
             Trace.TraceInformation("NotificationService OnStart");
 
+            //OnStop();
+
             _storageAccount = CloudStorageAccount.Parse(
                 CloudConfigurationManager.GetSetting("DataConnectionString"));
 
@@ -184,7 +186,7 @@ namespace NotificationService
             catch (Exception ex)
             {
                 Trace.TraceError($"Error sending email to {toEmail} for comment {comment.RowKey}: {ex}");
-                // možeš dodati await Task.Delay(...) ako želiš retry
+                
             }
         }
     }

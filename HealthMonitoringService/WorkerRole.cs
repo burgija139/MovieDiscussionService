@@ -1,5 +1,4 @@
 ﻿using Microsoft.WindowsAzure.ServiceRuntime;
-using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
 using MovieDiscussionService_Contracts.Contracts;
@@ -28,19 +27,16 @@ namespace MovieDiscussionService_HealthMonitoringService
     {
         private readonly ManualResetEvent _runCompleteEvent = new ManualResetEvent(false);
         private readonly CancellationTokenSource _cts = new CancellationTokenSource();
-        private bool _running = true;
+        //private bool _running = true;
         private HealthMonitoringServiceProvider _service;
-        // Dodaj u HealthMonitoringWorker klasu
         private CloudStorageAccount _storageAccount;
         private CloudQueue _adminQueue;
 
-        private HttpListener _listener;
+        //private HttpListener _listener;
 
         public override bool OnStart()
         {
             Trace.WriteLine("HealthMonitoringWorker started.");
-
-            // Inicijalizuj storage account pre nego što praviš queue
 
             _storageAccount = CloudStorageAccount.Parse(
                 RoleEnvironment.GetConfigurationSettingValue("DataConnectionString"));
@@ -48,14 +44,6 @@ namespace MovieDiscussionService_HealthMonitoringService
             var queueClient = _storageAccount.CreateCloudQueueClient();
             _adminQueue = queueClient.GetQueueReference("adminnotificationqueue");
             _adminQueue.CreateIfNotExists();
-
-            // HTTP listener
-            _listener = new HttpListener();
-            _listener.Prefixes.Add("http://localhost:50002/");
-            _listener.Start();
-
-            Thread listenerThread = new Thread(ListenForRequests);
-            listenerThread.Start();
 
             string connectionString = Environment.GetEnvironmentVariable("DataConnectionString")
                                       ?? "UseDevelopmentStorage=true";
@@ -84,42 +72,6 @@ namespace MovieDiscussionService_HealthMonitoringService
             base.OnStop();
         }
 
-        private void ListenForRequests()
-        {
-            while (_running)
-            {
-                try
-                {
-                    var context = _listener.GetContext();
-                    ProcessRequest(context);
-                }
-                catch (Exception ex)
-                {
-                    Trace.WriteLine("HTTP Listener error: " + ex.Message);
-                }
-            }
-        }
-
-        private void ProcessRequest(HttpListenerContext context)
-        {
-            if (context.Request.HttpMethod == "GET" && context.Request.Url.AbsolutePath == "/health-monitoring")
-            {
-                var records = _service.GetLastTwoHours();
-                var json = System.Text.Json.JsonSerializer.Serialize(records);
-
-                byte[] buffer = Encoding.UTF8.GetBytes(json);
-                context.Response.ContentType = "application/json";
-                context.Response.ContentLength64 = buffer.Length;
-                context.Response.OutputStream.Write(buffer, 0, buffer.Length);
-            }
-            else
-            {
-                context.Response.StatusCode = 404;
-            }
-
-            context.Response.OutputStream.Close();
-        }
-
         private async Task RunAsync(CancellationToken token)
         {
             while (!token.IsCancellationRequested)
@@ -128,7 +80,7 @@ namespace MovieDiscussionService_HealthMonitoringService
                 {
                     Trace.WriteLine("Performing health checks...");
 
-                    bool movieOk = CheckService("http://localhost:59271");
+                    bool movieOk = CheckService("http://localhost:80");
                     Trace.WriteLine($"MovieDiscussionService status: {movieOk}");
 
                     bool notificationOk = false;

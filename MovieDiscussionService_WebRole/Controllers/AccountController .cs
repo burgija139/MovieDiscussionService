@@ -72,7 +72,7 @@ namespace MovieDiscussionService.Controllers
 			// Provera da li je admin
 			if (user.IsAdmin)
 			{
-				return Redirect("http://localhost:57192/Health/");
+				return Redirect("http://localhost:8080/Health/");
 			}
 
 			return RedirectToAction("Index", "App");

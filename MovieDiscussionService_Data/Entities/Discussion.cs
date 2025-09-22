@@ -24,9 +24,9 @@ namespace MovieDiscussionService_Data.Entities
         public Discussion(string id)
 		{
 			PartitionKey = "Discussion";
-			RowKey = id; // može GUID ili kombinacija MovieTitle+Timestamp
+			RowKey = id; 
 		}
 
-		public Discussion() { } // default za deserializaciju
+		public Discussion() { }
 	}
 }
