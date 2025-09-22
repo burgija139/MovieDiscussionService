@@ -44,7 +44,7 @@ namespace MovieDiscussionService_WebRole.Controllers
         }
 
         // Utility
-        private string CurrentUserEmail => Session["UserEmail"] as string;
+        private string CurrentUserEmail => User.Identity.Name as string;
 
         private User CurrentUserOrNull()
         {
@@ -419,29 +419,5 @@ namespace MovieDiscussionService_WebRole.Controllers
             TempData["Success"] = "Komentar je dodat.";
             return RedirectToAction("Details", new { id });
         }
-
-        // Enqueue poruka za slanje emailova pratiocima
-        /*private void NotifyFollowersAsync(string discussionId, string discussionTitle, Comment comment)
-        {
-            var followers = _followRepo.GetFollowers(discussionId)
-                                       .Where(email => !string.Equals(email, comment.AuthorEmail, StringComparison.OrdinalIgnoreCase))
-                                       .ToList();
-            if (!followers.Any()) return;
-
-            var payload = new NotificationPayload
-            {
-                DiscussionId = discussionId,
-                DiscussionTitle = discussionTitle,
-                CommentAuthor = comment.AuthorEmail,
-                CommentText = comment.Text,
-                CreatedAtUtc = comment.CreatedAt,
-                Recipients = followers
-            };
-
-            // Serijalizuj payload kao JSON (prosto)
-            var json = Newtonsoft.Json.JsonConvert.SerializeObject(payload);
-            var msg = new CloudQueueMessage(json);
-            _notificationQueue.AddMessage(msg);
-        }*/
     }
 }

@@ -209,12 +209,12 @@
             </div>
             <div class="actions">
 
-                @if (user != null && user.IsVerified)
+                @if (User.IsInRole("Verified") && User.Identity.IsAuthenticated)
                 {
                     <a class="btn" href="@Url.Action("New","App")">+ Nova diskusija</a>
                 }
 
-                @if (user != null)
+                @if (User.Identity.IsAuthenticated)
                 {
                     <a class="btn" href="@Url.Action("EditProfile","Account")">Izmeni profil</a>
                     <a class="btn" href="@Url.Action("Logout","Account")">Logout</a>

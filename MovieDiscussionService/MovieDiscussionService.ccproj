@@ -72,14 +72,6 @@
       <RoleName>NotificationService</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
-    <ProjectReference Include="..\WorkerRoleService\WorkerRoleService.csproj">
-      <Name>WorkerRoleService</Name>
-      <Project>{5ad50c13-8666-4ad1-8499-4fa8b2f187be}</Project>
-      <Private>True</Private>
-      <RoleType>Worker</RoleType>
-      <RoleName>WorkerRoleService</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HealthMonitoringServiceContent\" />

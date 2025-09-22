@@ -3,10 +3,12 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using MovieDiscussionService_Data;
 using MovieDiscussionService_Data.Repositories;
+using System;
 using System.Linq;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
+using System.Web.Security;
 
 
 namespace MovieDiscussionService.Controllers
@@ -30,13 +32,17 @@ namespace MovieDiscussionService.Controllers
         [HttpGet]
         public ActionResult EditProfile()
         {
-            var email = Session["UserEmail"] as string;
+            var email = User.Identity.Name;
             if (string.IsNullOrEmpty(email))
                 return RedirectToAction("Login");
 
             var user = _userRepo.GetUserByEmail(email);
             if (user == null)
+            {
+                FormsAuthentication.SignOut();
                 return RedirectToAction("Login");
+            }
+                
 
             return View("EditProfile", user);
         }
@@ -44,8 +50,8 @@ namespace MovieDiscussionService.Controllers
         // GET: /Account/Logout
         public ActionResult Logout()
 		{
-			Session.Clear();
-			return RedirectToAction("Login");
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login");
 		}
 
 		// POST: /Account/Login
@@ -66,11 +72,31 @@ namespace MovieDiscussionService.Controllers
 				return View();
 			}
 
-			// Čuvamo samo RowKey u Session
-			Session["UserEmail"] = user.RowKey;
+            var userData = $"A:{(user.IsAdmin ? "1" : "0")};V:{(user.IsVerified ? "1" : "0")}";
 
-			// Provera da li je admin
-			if (user.IsAdmin)
+            var isPersistent = true;            // "remember me" po potrebi
+            var timeoutMinutes = 60;            
+            var ticket = new FormsAuthenticationTicket(
+                1,
+                user.RowKey,                    // email
+                DateTime.Now,
+                DateTime.Now.AddMinutes(timeoutMinutes),
+                isPersistent,
+                userData,
+                FormsAuthentication.FormsCookiePath
+            );
+
+            var enc = FormsAuthentication.Encrypt(ticket);
+            var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, enc)
+            {
+                HttpOnly = true,
+                Secure = Request.IsSecureConnection,       // true ako koristis HTTPS
+                SameSite = SameSiteMode.Lax
+            };
+            Response.Cookies.Add(cookie);
+
+            // Provera da li je admin
+            if (user.IsAdmin)
 			{
 				return Redirect("http://localhost:8080/Health/");
 			}
@@ -149,7 +175,7 @@ namespace MovieDiscussionService.Controllers
             HttpPostedFileBase profileImage
         )
         {
-            var email = Session["UserEmail"] as string;
+            var email = User.Identity.Name;
             if (string.IsNullOrEmpty(email))
                 return RedirectToAction("Login");
 
